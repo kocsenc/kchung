@@ -3,17 +3,39 @@
 	{
 		"selected_items":
 		[
+			[
+				"System",
+				"systemShutdown"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "scrabblesolver.ry",
+			"file": "scrabblesolver.rb",
 			"settings":
 			{
-				"buffer_size": 125,
+				"buffer_size": 830,
 				"line_ending": "Windows",
 				"name": "#Kocsen Chung"
+			}
+		},
+		{
+			"file": "parser.rb",
+			"settings":
+			{
+				"buffer_size": 1002,
+				"line_ending": "Windows",
+				"name": "parser.rb"
+			}
+		},
+		{
+			"file": "dictionary.txt",
+			"settings":
+			{
+				"buffer_size": 1763166,
+				"line_ending": "Windows",
+				"name": "AA"
 			}
 		}
 	],
@@ -41,11 +63,13 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Kocsen/Documents/GitHub/kchung/ScrabbleSolver/	from C",
+		"/C/Users/Kocsen/AppData/Roaming/Sublime Text 2/Packages/User/Plain text.sublime-settings",
 		"/C/Users/Kocsen/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -59,6 +83,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			")\n",
+			"end"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -76,28 +102,82 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scrabblesolver.ry",
+					"file": "scrabblesolver.rb",
 					"settings":
 					{
-						"buffer_size": 125,
+						"buffer_size": 830,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								125,
-								0
+								68,
+								68
 							]
 						],
 						"settings":
 						{
 							"auto_name": "#Kocsen Chung",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "parser.rb",
+					"settings":
+					{
+						"buffer_size": 1002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"auto_name": "parser.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dictionary.txt",
+					"settings":
+					{
+						"buffer_size": 1763166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1762784,
+								1762784
+							]
+						],
+						"settings":
+						{
+							"auto_name": "AA",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -140,6 +220,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 188.0
+	},
 	"replace":
 	{
 		"height": 0.0

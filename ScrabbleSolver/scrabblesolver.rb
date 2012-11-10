@@ -30,7 +30,7 @@ def main()
 			when "1"
 				
 			when "2"
-				puts dictionary
+				print dictionary
 
 			end
 		end
