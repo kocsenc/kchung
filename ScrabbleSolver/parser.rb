@@ -3,19 +3,39 @@
 #This file parses the dictionary file from dictionary.txt
 # and also assigns the points of each letter.
 
-def parseDictionary(input, dictionary)
-	puts sysout"Parsing Dictionary..."
+def parseDictionary(anagramHash, dictionary)
+	puts sysout"Parsing Dictionary and anagramHash..."
 	file = File.new("dictionary.txt", "r")
-	counter = 1
+	counter = 0
 	while (line = file.gets)
-		dictionary.push(*line.upcase!)
-		counter = counter + 1
+		parsePalindrome(line.upcase.chomp, anagramHash)
+		dictionary.push(line.upcase.chomp)
+		counter += 1
 	end
 	file.close
-	puts sysout"Dictionary Parsed..."
+	puts sysout"Dictionary and anagramHash Parsed..."
 	return true
 end
 	
+def parsePalindrome(input, anagramHash)
+	
+	#puts "Word key = " + input.chars.sort.join
+	#puts "Word Value = " + input
+
+	if anagramHash[input.chars.sort.join].nil?
+		#puts "Was nil. Making new k/v pair"
+		anagramHash[input.chars.sort.join] = [input]
+		
+	else
+		#puts "Was not nil. Adding value to key -> " + input.chars.sort.join
+		anagramHash[input.chars.sort.join].push(input)
+	end
+
+end
+
+
+
+
 
 def parsePoints(pointHash)
 	pointHash['A'] = 1

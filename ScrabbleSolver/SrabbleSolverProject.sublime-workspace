@@ -15,7 +15,7 @@
 			"file": "scrabblesolver.rb",
 			"settings":
 			{
-				"buffer_size": 830,
+				"buffer_size": 884,
 				"line_ending": "Windows",
 				"name": "#Kocsen Chung"
 			}
@@ -24,18 +24,20 @@
 			"file": "parser.rb",
 			"settings":
 			{
-				"buffer_size": 1002,
+				"buffer_size": 1024,
 				"line_ending": "Windows",
 				"name": "parser.rb"
 			}
 		},
 		{
-			"file": "dictionary.txt",
+			"contents": "module Main where\n{-\nmain :: IO ()\nmain = do\n	a <- getLine\n	if end a\n		then putStrLn \"Stopping\"\n		else putStrLn a >> main\n-}\nend :: String -> Bool\nend x = (read x::Int) == (-1)\n\nmain :: IO ()\nmain = getLine >>= \\x -> if end x then putStrLn \"Stopping\" else putStrLn \"Echo\" ++ x >> main",
+			"file": "/C/Users/Kocsen/Documents/ninput.hs",
+			"file_size": 287,
+			"file_write_time": 129970844027974457,
 			"settings":
 			{
-				"buffer_size": 1763166,
-				"line_ending": "Windows",
-				"name": "AA"
+				"buffer_size": 284,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -63,6 +65,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Kocsen/Documents/GitHub/kchung/ScrabbleSolver/dictionary.txt",
 		"/C/Users/Kocsen/Documents/GitHub/kchung/ScrabbleSolver/	from C",
 		"/C/Users/Kocsen/AppData/Roaming/Sublime Text 2/Packages/User/Plain text.sublime-settings",
 		"/C/Users/Kocsen/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
@@ -83,6 +86,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"()\n",
 			")\n",
 			"end"
 		],
@@ -102,7 +106,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -110,21 +114,22 @@
 					"file": "scrabblesolver.rb",
 					"settings":
 					{
-						"buffer_size": 830,
+						"buffer_size": 884,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								68,
-								68
+								674,
+								674
 							]
 						],
 						"settings":
 						{
 							"auto_name": "#Kocsen Chung",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -137,21 +142,23 @@
 					"file": "parser.rb",
 					"settings":
 					{
-						"buffer_size": 1002,
+						"buffer_size": 1024,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								129,
-								129
+								778,
+								778
 							]
 						],
 						"settings":
 						{
 							"auto_name": "parser.rb",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"spell_check": true,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -161,26 +168,25 @@
 				},
 				{
 					"buffer": 2,
-					"file": "dictionary.txt",
+					"file": "/C/Users/Kocsen/Documents/ninput.hs",
 					"settings":
 					{
-						"buffer_size": 1763166,
+						"buffer_size": 284,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1762784,
-								1762784
+								284,
+								284
 							]
 						],
 						"settings":
 						{
-							"auto_name": "AA",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Haskell/Haskell.tmLanguage"
 						},
-						"translation.x": 0.0,
+						"translation.x": 266.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
