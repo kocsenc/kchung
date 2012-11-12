@@ -8,7 +8,7 @@ def main()
 	dictionary = [] #dictionary (array of words)
 	anagramHash = Hash.new
 	pointHash = Hash.new
-
+	puts sysout("INITIALIZING SCRUBBY SYSTEM")
 	boolean = true
 	if parseDictionary(anagramHash, dictionary) and parsePoints(pointHash) == true
 		
@@ -40,7 +40,7 @@ def main()
 				puts "This is your input> " + hand
 				puts "This is your input sorted: " + hand.split(' ').sort.join.upcase
 				hand = hand.split(' ').sort.join
-				print getPossibleWords.inspect
+				print getPossibleWords(hand, anagramHash).inspect
 
 				
 

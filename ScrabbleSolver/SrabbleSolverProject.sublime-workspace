@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Scrabble",
+				"ScrabbleSolver"
+			],
+			[
+				"ha",
+				"anagramHash"
+			],
+			[
+				"Hash",
+				"anagramHash"
+			],
+			[
 				"System",
 				"systemShutdown"
 			]
@@ -15,7 +27,7 @@
 			"file": "scrabblesolver.rb",
 			"settings":
 			{
-				"buffer_size": 884,
+				"buffer_size": 1766,
 				"line_ending": "Windows",
 				"name": "#Kocsen Chung"
 			}
@@ -24,16 +36,13 @@
 			"file": "parser.rb",
 			"settings":
 			{
-				"buffer_size": 1024,
+				"buffer_size": 1477,
 				"line_ending": "Windows",
 				"name": "parser.rb"
 			}
 		},
 		{
-			"contents": "module Main where\n{-\nmain :: IO ()\nmain = do\n	a <- getLine\n	if end a\n		then putStrLn \"Stopping\"\n		else putStrLn a >> main\n-}\nend :: String -> Bool\nend x = (read x::Int) == (-1)\n\nmain :: IO ()\nmain = getLine >>= \\x -> if end x then putStrLn \"Stopping\" else putStrLn \"Echo\" ++ x >> main",
 			"file": "/C/Users/Kocsen/Documents/ninput.hs",
-			"file_size": 287,
-			"file_write_time": 129970844027974457,
 			"settings":
 			{
 				"buffer_size": 284,
@@ -65,8 +74,8 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Kocsen/Documents/GitHub/kchung/ScrabbleSolver/dictionary.txt",
 		"/C/Users/Kocsen/Documents/GitHub/kchung/ScrabbleSolver/	from C",
+		"/C/Users/Kocsen/Documents/GitHub/kchung/ScrabbleSolver/dictionary.txt",
 		"/C/Users/Kocsen/AppData/Roaming/Sublime Text 2/Packages/User/Plain text.sublime-settings",
 		"/C/Users/Kocsen/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
 	],
@@ -76,7 +85,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -86,6 +95,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"()\n",
+			"input",
 			"()\n",
 			")\n",
 			"end"
@@ -106,7 +117,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -114,15 +125,15 @@
 					"file": "scrabblesolver.rb",
 					"settings":
 					{
-						"buffer_size": 884,
+						"buffer_size": 1766,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								674,
-								674
+								1555,
+								1555
 							]
 						],
 						"settings":
@@ -132,7 +143,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 684.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -142,15 +153,15 @@
 					"file": "parser.rb",
 					"settings":
 					{
-						"buffer_size": 1024,
+						"buffer_size": 1477,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								778,
-								778
+								488,
+								488
 							]
 						],
 						"settings":
@@ -178,15 +189,15 @@
 						"selection":
 						[
 							[
-								284,
-								284
+								58,
+								58
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Haskell/Haskell.tmLanguage"
 						},
-						"translation.x": 266.0,
+						"translation.x": 18.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -228,7 +239,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 188.0
+		"height": 192.0
 	},
 	"replace":
 	{
