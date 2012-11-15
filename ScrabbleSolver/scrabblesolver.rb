@@ -79,84 +79,61 @@ def everyPermutation(word, anagramHash, pointHash)
 	results = []
 	beenThereDoneThat = []
 
-	#allTheWords = word.chars.to_a.permutation.map &:join
+	allTheWords = word.chars.to_a.permutation.map &:join
 	
 	puts sysout("Searching for ALL results...")
-	while permCounter < wordSize
-		puts sysout("Iteration #" + permCounter.inspect)
-		
-		while counter < wordSize 
-			canCheck1 = true
-			canCheck2 = true
-			canCheck3 = true
-			wiq = word.split(//)
-
-
-			split1 = wiq[counter, wordSize].sort.join
-			#puts sysout("split1 = " + split1)
-			if split1.split(//).size < 2 or beenThereDoneThat.include?(split1) 
-				beenThereDoneThat.push()
-				canCheck1 = false
-			end
-
-			beenThereDoneThat.push(split1)
-
-			if canCheck1
-				queryResult1 = getPossibleWords(split1, anagramHash)
-				if queryResult1 != []
-					queryResult1.each { |q| 
-						if !results.include?(q) #and getPoints(q, pointHash) > maxPointsAttained
-							
-							results.push(q)
-						else
-							#puts sysout("Found duplicate, not pushing: " + q)
-						end
-						}
-					#puts sysout("Since no matches, no push")
-					
-				end
-			end
+	for daWord in allTheWords do
+		#puts sysout("Trying with " + daWord + "...")
+		while permCounter < wordSize
+			#puts sysout("Iteration #" + permCounter.inspect)
 			
-			#SPLIT 2 BEGIN HERE#####################################################
-			split2 = wiq[0 ,counter].sort.join
-			if split2.split(//).size < 2 or beenThereDoneThat.include?(split2)
-				canCheck2 = false
-			end
-			
-			beenThereDoneThat.push(split2)
+			while counter < wordSize 
+				canCheck1 = true
+				canCheck2 = true
+				canCheck3 = true
+				wiq = daWord.split(//)
 
-			if canCheck2
-				queryResult2 = getPossibleWords(split2, anagramHash)
-				if queryResult2 != [] 
-					queryResult2.each { |w|
-						if !results.include?(w) #and getPoints(w, pointHash) > maxPointsAttained
-							#puts sysout("Pushing " +w)
-							results.push(w)
-						else
-							#puts sysout("Found duplicate, not pushing: " + w)
-						end
-					}
-					
-				end
-			end
-			
-			# SPLIT 3 BEGIN HERE##################################################
-			if wiq.slice(counter+permCounter, wordSize-(counter+permCounter)) != nil
-				split3 = ((wiq.slice(0, counter) + wiq.slice(counter+permCounter, wordSize-(counter+permCounter))))
-				split3 = split3.sort.join
-				puts sysout("split3 = " + split3.inspect)
 
-				if split3.split(//).size < 2 or beenThereDoneThat.include?(split3)
-					canCheck3 = false
+				split1 = wiq[counter, wordSize].sort.join
+				#puts sysout("split1 = " + split1)
+				if split1.split(//).size < 2 or beenThereDoneThat.include?(split1) 
+					beenThereDoneThat.push()
+					canCheck1 = false
 				end
 
-				if canCheck3
-					queryResult3 = getPossibleWords(split3, anagramHash)
-					if queryResult3 != [] 
-						queryResult3.each { |z|
-							if !results.include?(z) #and getPoints(z, pointHash) > maxPointsAttained
+				beenThereDoneThat.push(split1)
+
+				if canCheck1
+					queryResult1 = getPossibleWords(split1, anagramHash)
+					if queryResult1 != []
+						queryResult1.each { |q| 
+							if !results.include?(q) #and getPoints(q, pointHash) > maxPointsAttained
+								
+								results.push(q)
+							else
+								#puts sysout("Found duplicate, not pushing: " + q)
+							end
+							}
+						#puts sysout("Since no matches, no push")
+						
+					end
+				end
+				
+				#SPLIT 2 BEGIN HERE#####################################################
+				split2 = wiq[0 ,counter].sort.join
+				if split2.split(//).size < 2 or beenThereDoneThat.include?(split2)
+					canCheck2 = false
+				end
+				
+				beenThereDoneThat.push(split2)
+
+				if canCheck2
+					queryResult2 = getPossibleWords(split2, anagramHash)
+					if queryResult2 != [] 
+						queryResult2.each { |w|
+							if !results.include?(w) #and getPoints(w, pointHash) > maxPointsAttained
 								#puts sysout("Pushing " +w)
-								results.push(z)
+								results.push(w)
 							else
 								#puts sysout("Found duplicate, not pushing: " + w)
 							end
@@ -164,16 +141,42 @@ def everyPermutation(word, anagramHash, pointHash)
 						
 					end
 				end
-			end
+				
+				# SPLIT 3 BEGIN HERE##################################################
+				if wiq.slice(counter+permCounter, wordSize-(counter+permCounter)) != nil
+					split3 = ((wiq.slice(0, counter) + wiq.slice(counter+permCounter, wordSize-(counter+permCounter))))
+					split3 = split3.sort.join
+					
 
-			
-			counter += 1
+					if split3.split(//).size < 2 or beenThereDoneThat.include?(split3)
+						canCheck3 = false
+					end
+
+					if canCheck3
+						queryResult3 = getPossibleWords(split3, anagramHash)
+						if queryResult3 != [] 
+							queryResult3.each { |z|
+								if !results.include?(z) #and getPoints(z, pointHash) > maxPointsAttained
+									#puts sysout("Pushing " +w)
+									results.push(z)
+								else
+									#puts sysout("Found duplicate, not pushing: " + w)
+								end
+							}
+							
+						end
+					end
+				end
+
+				
+				counter += 1
+				
+			end
+			permCounter += 1
+			counter = 0
+
 			
 		end
-		permCounter += 1
-		counter = 0
-
-		
 	end
 	return results 
 
