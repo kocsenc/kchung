@@ -35,15 +35,17 @@ def main()
 				systemShutdown()
 			when "1"
 
-				puts "Please insert your letters separated by a SPACE."
+				puts "Please insert your letters (<11)"
 				hand = gets.chomp!.upcase
 				
 				puts "This is your input sorted: " + hand.split(' ').sort.join.upcase
 				hand = hand.split(' ').sort.join
 				
 
-				resultArray =  everyPermutation(hand, anagramHash, pointHash)
-				puts resultArray.inspect
+				resultArray =  everyPermutation(hand, anagramHash, pointHash).sort_by {|x| x.length}.reverse
+				#puts resultArray.inspect
+				printOutBestResults(resultArray, pointHash)
+
 
 				
 
@@ -68,10 +70,10 @@ def everyPermutation(word, anagramHash, pointHash)
 	#puts sysout("Word split(//) is " + word.split(//).inspect)
 
 	mainWord = word.clone()
-	puts sysout("Word clone is " + mainWord)
-
+	
 	wordSize = mainWord.split(//).size
 	puts sysout("wordSize = " + wordSize.to_s())
+	puts sysout("Searching for ALL results...")
 
 	counter = 0
 	permCounter = 0
@@ -79,9 +81,10 @@ def everyPermutation(word, anagramHash, pointHash)
 	results = []
 	beenThereDoneThat = []
 
+
 	allTheWords = word.chars.to_a.permutation.map &:join
 	
-	puts sysout("Searching for ALL results...")
+	
 	for daWord in allTheWords do
 		#puts sysout("Trying with " + daWord + "...")
 		while permCounter < wordSize
@@ -198,6 +201,22 @@ def getPossibleWords(input, anagramHash)
 	
 end
 
+def printOutBestResults(list, pointHash)
+	puts ""
+	puts "Success"
+	puts "Top 5 results ^by points:"
+	finalWords = []
+	for words in list
+		finalWords.push(Word.new(words, getPoints(words, pointHash)))
+	end
+	finalWords.sort_by {|x| x.points}.reverse
+	for i in 0...5
+		puts "		" + finalWords[i].to_s
+	end
+end
+
+
+
 def getPoints(word, pointHash)
 	points = 0
 	word.split(//).each {|x|
@@ -228,6 +247,21 @@ end
 def sysout(text)
 	return "[SYS]	" + text 
 end
+
+class Word
+	attr_accessor :word, :points
+
+	def initialize(word, points)
+		@word = word
+		@points = points
+	end
+
+	def to_s
+		"[" + @points.to_s + "]: " +@word
+	end
+end
+
+
 
 
 main()

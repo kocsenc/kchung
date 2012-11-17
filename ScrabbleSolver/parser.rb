@@ -25,7 +25,7 @@ def parsePalindrome(input, anagramHash)
 	if anagramHash[input.chars.sort.join].nil?
 		#puts "Was nil. Making new k/v pair"
 		anagramHash[input.chars.sort.join] = [input]
-		
+			
 	else
 		#puts "Was not nil. Adding value to key -> " + input.chars.sort.join
 		anagramHash[input.chars.sort.join].push(input)
