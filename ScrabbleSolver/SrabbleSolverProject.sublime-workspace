@@ -134,7 +134,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -149,12 +149,8 @@
 						"selection":
 						[
 							[
-								142,
-								142
-							],
-							[
-								806,
-								810
+								530,
+								530
 							]
 						],
 						"settings":
@@ -218,7 +214,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 284963.0,
+						"translation.y": 31731.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -235,14 +231,15 @@
 						"selection":
 						[
 							[
-								293,
-								293
+								391,
+								391
 							]
 						],
 						"settings":
 						{
 							"auto_name": "#Regexer",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
