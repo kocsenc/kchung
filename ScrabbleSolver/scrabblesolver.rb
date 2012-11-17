@@ -155,7 +155,7 @@ def everyPermutation(word, anagramHash, pointHash)
 					if canCheck3
 						queryResult3 = getPossibleWords(split3, anagramHash)
 						if queryResult3 != [] 
-							queryResult3.each { |z|
+							q ueryResult3.each { |z|
 								if !results.include?(z) #and getPoints(z, pointHash) > maxPointsAttained
 									#puts sysout("Pushing " +w)
 									results.push(z)
