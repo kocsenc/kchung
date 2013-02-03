@@ -1,6 +1,6 @@
-#Kocsen Chung
-#Scrabble Solver  -  Main Run method
-
+# Kocsen Chung
+# Scrabble Solver  -  Main Run method
+# Teaching myself Ruby
 	
 
 def main()
