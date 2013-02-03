@@ -1,4 +1,7 @@
 #Kocsen Chung
+# does to phonetic conversion when prefixed with A2P
+# does to alphabetic convesion when prefixed with P2A 
+#see phonetic.rb for method calls
 
 require './phonetic'
 
