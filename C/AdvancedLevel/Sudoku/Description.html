@@ -1,0 +1,1710 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="Description_files/filelist.xml">
+<title>Sudoku</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Tom Reichlmayr</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>tjr</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>28</o:TotalTime>
+  <o:Created>2011-11-29T19:56:00Z</o:Created>
+  <o:LastSaved>2011-12-12T03:26:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>2849</o:Words>
+  <o:Characters>16244</o:Characters>
+  <o:Company>RIT</o:Company>
+  <o:Lines>135</o:Lines>
+  <o:Paragraphs>38</o:Paragraphs>
+  <o:CharactersWithSpaces>19055</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="Description_files/themedata.thmx">
+<link rel=colorSchemeMapping href="Description_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073711037 9 0 511 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:script;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:86463328;
+	mso-list-template-ids:-1434661734;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:344018816;
+	mso-list-template-ids:112197918;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:358433915;
+	mso-list-template-ids:112197918;}
+@list l2:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:396443042;
+	mso-list-template-ids:-2091985724;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:452797700;
+	mso-list-template-ids:112197918;}
+@list l4:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:874735553;
+	mso-list-template-ids:112197918;}
+@list l5:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:1089081560;
+	mso-list-template-ids:112197918;}
+@list l6:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7
+	{mso-list-id:1198130107;
+	mso-list-template-ids:112197918;}
+@list l7:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:1643921575;
+	mso-list-template-ids:-173098790;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:1828396238;
+	mso-list-template-ids:112197918;}
+@list l9:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center'><span style='font-family:"Helvetica","sans-serif";
+mso-fareast-font-family:"Times New Roman";color:#009900'>Project Description<br>
+<span class=SpellE>SuDoKu</span> <o:p></o:p></span></h1>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Overview</span><span style='mso-fareast-font-family:
+"Times New Roman";color:#009900'><o:p></o:p></span></h2>
+
+<p>For this project you will complete a skeleton C program that presents a <span
+class=SpellE>sudoku</span> puzzle to a player and provides commands for the
+player to incrementally solve the puzzle. <a
+href="http://www.sudokuessentials.com/sudoku_rules.html">Here is a tutorial on
+the rules of <span class=SpellE>sudoku</span></a> for those who are unfamiliar
+with the game.</p>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Setup</span><span style='mso-fareast-font-family:
+"Times New Roman";color:#009900'><o:p></o:p></span></h2>
+
+<p><a href="sudoku.zip">Download the file sudoku.zip</a> from the software
+engineering web to a clean working directory for this project. Unzip the file -
+on <span class=SpellE>linus</span> you can use the command:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Lucida Console"'>unzip</span></b></span><b><span style='font-family:"Lucida Console"'>
+sudoku.zip</span></b></p>
+
+<p><span class=GramE>which</span> will place all the files in the zip archive
+in the current directory. At this point you can remove sudoku.zip; should you
+need it later (e.g., for disaster recovery) you can always download it from
+this page. At this point you should see the following files &amp; directories:</p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>bool.h</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span class=GramE>A&nbsp;header
+file</span> declaring a pseudo-type for <span class=SpellE><b><span
+style='font-family:"Lucida Console"'>bool</span></b></span> along with
+constants <b><span style='font-family:"Lucida Console"'>FALSE</span></b> and <b><span
+style='font-family:"Lucida Console"'>TRUE</span></b>.</p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>main.c</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>The main driver function: It parses
+the command line arguments, initializes the puzzle, loads the puzzle
+configuration from a file provided as an argument, and, if the load succeeds,
+reads user commands (one command per input line) and calls the appropriate
+processing function in the <b><span style='color:#3333FF'>puzzle</span></b>
+module. </p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>arguments.h</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'> &amp; <span class=SpellE>arguments.c</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>Interface to and implementation of
+a module processing the command line arguments to (a) determine whether or not
+the input commands should be echoed (optional <b><span style='color:#3333FF'>-e</span></b>
+flag), and (b) open the puzzle configuration file, which defines the initial
+state of the puzzle. Exits with appropriate messages if there are problems with
+the arguments provided.<br>
+<b><span style='font-family:"Helvetica","sans-serif"'>Note:</span></b> You need
+not concern yourself with this module, as it is only used by the main function.
+On the other hand, perusing it would give <span class=GramE>you &nbsp;examples</span>
+of using some standard C functions and idioms.</p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>puzzle.h</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'> &amp; <span class=SpellE>puzzle.c</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>The <b><span style='color:#3333FF'>puzzle</span></b>
+module you will complete. The header, <span class=SpellE><b><span
+style='color:#3333FF'>puzzle.h</span></b></span>, defines the interface you <b><i><u><span
+style='color:#CC0000'>must</span></u></i></b> adhere to, as the only source
+file you will submit is the corresponding implementation, <span class=SpellE><b><span
+style='color:#3333FF'>puzzle.c</span></b></span>. In particular, <span
+class=SpellE><b><span style='color:#3333FF'>puzzle.c</span></b></span> is the <i>one
+file you must edit</i> and the <i>only file you may edit</i>.</p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>solve_sudoku</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'> &amp; <span class=SpellE>skeleton_sudoku</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>Two executable files, compiled and
+linked for Linux. <span class=SpellE><span class=GramE><b><span
+style='color:#3333FF'>solve_sudoku</span></b></span></span> represents a full,
+complete implementation of the requirements, including error handling; use it
+as a reference against which to compare your program as you go along. <span
+class=SpellE><span class=GramE><b><span style='color:#3333FF'>skeleton_sudoku</span></b></span></span>
+was compiled directly from the files we provide;&nbsp;all the functions in the <span
+class=SpellE><b><span style='color:#3333FF'>puzzle.c</span></b></span> file
+have been stubbed out, and those functions with return values return whatever
+is required to make it appear that everything proceeds normally. This can be
+used as a baseline for comparison with your version.</p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>Makefile</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>A file making it easy to compile
+the source code and link the object files. To create an executable file named <span
+class=SpellE><b><span style='color:#3333FF'>sudoku</span></b></span> use the
+command:<br>
+<br>
+<span style='font-family:"Lucida Console"'>&nbsp; &nbsp; <b>make <span
+class=SpellE>sudoku</span></b></span><br>
+<br>
+<span class=GramE>As</span> you add functionality to the <span class=SpellE><b><span
+style='color:#3333FF'>puzzle.c</span></b></span> implementation, this
+executable will be used to test your changes. <span class=SpellE><b><span
+style='color:#3333FF'>Makefile</span></b></span> also has a series of targets
+to run your program using different valid and erroneous puzzle configurations,
+as well as command scripts that are error free or seeded with specific types of
+errors. <span class=GramE>More on these tests below.</span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:"Helvetica","sans-serif"'>p+s</span></b></span><b><span
+style='font-family:"Helvetica","sans-serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>A directory with (<b><span
+style='color:#3333FF'>p</span></b><span class=GramE>)<span class=SpellE>uzzle</span></span>
+configurations and command (<b><span style='color:#3333FF'>s</span></b>)<span
+class=SpellE>cripts</span> for use in testing.</p>
+
+<p class=MsoNormal><b><span style='font-family:"Helvetica","sans-serif"'>Description.html<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>This file (in case you are working
+remotely and can't access the SE web servers).</p>
+
+<p class=MsoNormal><b><span style='font-family:"Helvetica","sans-serif"'>Track+Reflect.doc<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'>An M/S Word file in which you
+record your estimate and actual time it took to do each level, along with
+reflections on why they diverge (if they do) and your perception of the project
+as a whole.</p>
+
+<p><b><span style='font-family:"Helvetica","sans-serif"'>Note:</span></b> If
+you have problems running either <span class=SpellE><b><span style='color:#3333FF'>solve_sudoku</span></b></span>
+or <span class=SpellE><b><span style='color:#3333FF'>skeleton_sudoku</span></b></span>,
+this is probably because the files are <span class=SpellE>exectuable</span>. To
+fix this, run the following command on <span class=SpellE>Linus</span>:</p>
+
+<div style='margin-left:30.0pt'>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><b><span
+style='font-family:"Lucida Console"'>chmod</span></b></span></span><b><span
+style='font-family:"Lucida Console"'> +x <span class=SpellE>solve_sudoku</span>
+<span class=SpellE>skeleton_sudoku</span></span></b></p>
+
+</div>
+
+<p>This will set the e(<b><span style='color:#3333FF'>x</span></b><span
+class=GramE>)<span class=SpellE>ecute</span></span> permission on these files,
+at which point you should be able to run them.</p>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Using the Example Programs<o:p></o:p></span></h2>
+
+<p>All the examples will be given using <span class=SpellE><b><span
+style='color:#3333FF'>solve_sudoku</span></b></span>. You can substitute <span
+class=SpellE><b><span style='color:#3333FF'>skeleton_sudoku</span></b></span>, but
+the program will look like it did nothing (which, in fact, is what happens in
+the skeleton). And, of course, as you implement the required functionality, you
+can use your compiled version, <span class=SpellE><b><span style='color:#3333FF'>sudoku</span></b></span>.</p>
+
+<p>The program is invoked in one of two ways:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Lucida Console"'>./</span></b></span><span class=SpellE><b><span
+style='font-family:"Lucida Console"'>solve_sudoku</span></b></span><b><span
+style='font-family:"Lucida Console"'> <span class=SpellE>configfile</span><br>
+./<span class=SpellE>solve_sudoku</span> -e <span class=SpellE>configfile</span><o:p></o:p></span></b></p>
+
+<p>In both cases,&nbsp;<span class=SpellE><b><span style='color:#3333FF'>configfile</span></b></span>
+is a text file giving the initial placement of digits in the puzzle. The
+optional <b><span style='color:#3333FF'>-e</span></b> flag determines whether
+or not the user commands are echoed to standard output. If you're running on the
+console and typing in commands, you should probably not use the flag. On the
+other hand, if you are running commands from a script (a text file), then <b><span
+style='color:#3333FF'>-e</span></b> lets you see what commands are executed in
+sequence.</p>
+
+<p><b><span style='font-family:"Helvetica","sans-serif"'>Example<o:p></o:p></span></b></p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Lucida Console"'>./</span></b></span><span class=SpellE><b><span
+style='font-family:"Lucida Console"'>solve_sudoku</span></b></span><b><span
+style='font-family:"Lucida Console"'> -e <span class=SpellE>p+s</span>/good_puzzle.txt
+&lt; <span class=SpellE>p+s</span>/script_good_solve_puzzle.txt<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span class=GramE>runs</span> the program using a legitimate
+puzzle configuration in <span class=SpellE><b><span style='color:#3333FF'>p+s</span></b></span><b><span
+style='color:#3333FF'>/good_puzzle.txt</span></b> with echoing turned on and
+the commands coming from the script file <span class=SpellE><b><span
+style='color:#3333FF'>p+s</span></b></span><b><span style='color:#3333FF'>/script_good_solve_puzzle.txt</span></b>
+- this script has&nbsp;commands that add digits to the puzzle to solve it.
+Along the way, the partial puzzle solution is printed at several points. </p>
+
+<p>You could run the puzzle interactively as follows:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Lucida Console"'>./</span></b></span><span class=SpellE><b><span
+style='font-family:"Lucida Console"'>solve_sudoku</span></b></span><b><span
+style='font-family:"Lucida Console"'>&nbsp;<span class=SpellE>p+s</span>/good_puzzle.txt<o:p></o:p></span></b></p>
+
+<p>In this case, the main program directs the initialization and loading of the
+puzzle configuration, prints the initial board, and enters the command loop.
+Each time through the loop the program prompts command: to which you respond
+with a single lower-case letter command and possibly digits used by the
+command. Spacing is important: the command letter must be the first character
+on the line, and the command and arguments are separated from each other by a
+single digit; each command is terminated by a newline. The commands are:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0
+ style='mso-cellspacing:.7pt;margin-left:30.0pt;mso-yfti-tbllook:1184;
+ mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-family:"Lucida Console"'>p<o:p></o:p></span></b></p>
+  </td>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Print the puzzle</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-family:"Lucida Console"'>q<o:p></o:p></span></b></p>
+  </td>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Quit (also on end-of-file)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=100 valign=bottom style='width:60.0pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-family:"Lucida Console"'>a </span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>r</span></i></b><b><span
+  style='font-family:"Lucida Console"'> </span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>c</span></i></b><b><span
+  style='font-family:"Lucida Console"'> </span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>d</span></i></b></p>
+  </td>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Add digit&nbsp;<b><i><span style='font-family:"Comic Sans MS"'>d</span></i></b>
+  to the puzzle at row&nbsp;<b><i><span style='font-family:"Comic Sans MS"'>r</span></i></b>
+  column <b><i><span style='font-family:"Comic Sans MS"'>c</span></i></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-family:"Lucida Console"'>e </span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>r</span></i></b><b><span
+  style='font-family:"Lucida Console"'> </span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>c</span></i></b><b><span
+  style='font-family:"Lucida Console"'> </span></b></p>
+  </td>
+  <td valign=bottom style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Erase the digit at row&nbsp;<b><i><span style='font-family:
+  "Comic Sans MS"'>r</span></i></b> column&nbsp;<b><i><span style='font-family:
+  "Comic Sans MS"'>c</span></i></b></p>
+  </td>
+ </tr>
+</table>
+
+<p>Rows, columns, and digits are all in the range&nbsp;<b><span
+style='font-family:"Lucida Console"'>1<span class=GramE>..9</span></span></b>.</p>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Design Notes<o:p></o:p></span></h2>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Puzzle Configuration File Format<o:p></o:p></span></h3>
+
+<p class=MsoNormal>The configuration file comprises a series of 0 or more rows,
+each row beginning with three digit characters giving the row, column, and
+value for one of the initial placements in the puzzle. All three digits must be
+in the range <b><span style='font-family:"Lucida Console"'>1<span class=GramE>..9</span></span></b>.
+For example, the line <b><span style='font-family:"Lucida Console"'>135</span></b>
+means&nbsp;<b><span style='font-family:"Lucida Console"'>5</span></b> <span
+class=GramE>is</span> to be placed at row&nbsp;<b><span style='font-family:
+"Lucida Console"'>1</span></b>, column <b><span style='font-family:"Lucida Console"'>3</span></b>
+in the initial configuration.</p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Puzzle Data Structures<o:p></o:p></span></h3>
+
+<p>The puzzle implementation is built on two 10x10 matrices: <b><span
+style='color:#3333FF'>puzzle</span></b> and <b><span style='color:#3333FF'>fixed</span></b>.
+The matrices are 10x10 to permit 1-based indexing into the 9x9 array defining
+the puzzle proper; the 0th row and column are unused.</p>
+
+<p>The <b><span style='color:#3333FF'>puzzle</span></b> matrix holds the values
+placed so far, with 0 representing a blank (available) location or cell. After
+initialization to all zeros, this matrix is filled in first from the
+configuration file and then via commands read from standing input. In later
+stages of the implementation, the program will enforce the Sudoku consistency
+constraints - a row, column, or 3x3 <span class=GramE>region</span> may not
+contain the same value in two cells.</p>
+
+<p>The <b><span style='color:#3333FF'>fixed</span></b> matrix is a <span
+class=SpellE><span class=GramE>boolean</span></span> matrix initialized to all <b><span
+style='font-family:"Lucida Console"'>FALSE</span></b> values. When a puzzle is
+configured (via data in a configuration file), the row and column for each
+value so placed is set to <b><span style='font-family:"Lucida Console"'>TRUE</span></b>
+in <b><span style='color:#3333FF'>fixed</span></b>. In later stages of the
+implementation, attempting to erase a fixed value is an error and the cell is
+not changed.</p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Puzzle Module Interface<o:p></o:p></span></h3>
+
+<p>The public interface has of an enumeration, <span class=SpellE><b><span
+style='color:#3333FF'>op_result</span></b></span>, which is used to report <span
+class=GramE>back</span> the status of each add or erase command. <b><span
+style='color:#3333FF'>OP_OK</span></b> signals success; the other values in the
+enumeration reflect the different errors that may be detected. <b><span
+style='color:#3333FF'>OP_BADARGS</span></b> means the command gave a row,
+column, or digit that was not in the range&nbsp;<b><span style='font-family:
+"Lucida Console"'>1..9</span></b>, <b><span style='color:#3333FF'>OP_OCCUPIED</span></b>
+is for attempts to place something at a location with an existing value, <b><span
+style='color:#3333FF'>OP_ILLEGAL</span></b> is for placements that would
+violate the Sudoku rules (a duplicate value in a row, column, or region), <b><span
+style='color:#3333FF'>OP_EMPTY</span></b> is for attempts to erase an empty
+cell, and <b><span style='color:#3333FF'>OP_FIXED</span></b> is for attempts to
+erase a fixed cell (one set by the puzzle configuration). Only <b><span
+style='color:#3333FF'>OP_OK</span></b> results in a change to the puzzle
+layout; all erroneous commands have no effect.</p>
+
+<p>The interface proper is defined by five visible functions:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0
+ style='mso-cellspacing:.7pt;margin-left:22.5pt;mso-yfti-tbllook:1184;
+ mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-family:"Lucida Console"'>init_puzzle</span></b></span><b><span
+  style='font-family:"Lucida Console"'>( )<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Initialize the <b><span style='color:#3333FF'>puzzle</span></b>
+  and <b><span style='color:#3333FF'>fixed</span></b> matrices.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><b><span style='font-family:"Lucida Console"'>configure( </span></b><span
+  class=SpellE><b><i><span style='font-family:"Comic Sans MS"'>pf</span></i></b></span><b><span
+  style='font-family:"Lucida Console"'> )<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Read configuration lines from the file whose handle
+  is&nbsp;<span class=SpellE><b><i><span style='font-family:"Comic Sans MS"'>pf</span></i></b></span>
+  and use this to fill out the <b><span style='color:#3333FF'>puzzle</span></b>
+  and <b><span style='color:#3333FF'>fixed</span></b> matrices. If any
+  configuration errors are encountered, this function prints a message and exits
+  - thus a return from this function represents successful configuration.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-family:"Lucida Console"'>print_puzzle</span></b></span><b><span
+  style='font-family:"Lucida Console"'>( )<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Print the puzzle</p>
+  <div style='margin-left:15.0pt'>
+  <p class=MsoNormal>- The first line is 25 dashes (<b><span style='font-family:
+  "Lucida Console"'>-</span></b>).<br>
+  - A line of 25 dashes is also printed after the 3rd, 6th, and 9th row of the
+  puzzle.<br>
+  - Each puzzle row begins with a vertical bar (<b><span style='font-family:
+  "Lucida Console"'>|</span></b><span class=GramE>)</span><br>
+  - Each cell in the row is printed as a space and the cell's value (space for
+  a 0 value).<br>
+  - After the 3rd, 6th, and 9th <span class=SpellE>colum</span>, a space and a
+  vertical bar are printed.</p>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=281 valign=top style='width:168.75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-family:"Lucida Console"'>add_digit</span></b></span><b><span
+  style='font-family:"Lucida Console"'>(&nbsp;</span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>r</span></i></b><b><span
+  style='font-family:"Lucida Console"'>,&nbsp;</span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>c</span></i></b><b><span
+  style='font-family:"Lucida Console"'>,&nbsp;</span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>d</span></i></b><b><span
+  style='font-family:"Lucida Console"'> )<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Add digit&nbsp;<b><i><span style='font-family:"Comic Sans MS"'>d</span></i></b>
+  to the puzzle cell at row&nbsp;<b><i><span style='font-family:"Comic Sans MS"'>r</span></i></b>,
+  column&nbsp;<b><i><span style='font-family:"Comic Sans MS"'>c</span></i></b>,
+  returning success or error status.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-family:"Lucida Console"'>erase_digit</span></b></span><b><span
+  style='font-family:"Lucida Console"'>(&nbsp;</span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>r</span></i></b><b><span
+  style='font-family:"Lucida Console"'>,&nbsp;</span></b><b><i><span
+  style='font-family:"Comic Sans MS"'>c</span></i></b><b><span
+  style='font-family:"Lucida Console"'> )<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Erase&nbsp;the puzzle cell at row&nbsp;<b><i><span
+  style='font-family:"Comic Sans MS"'>r</span></i></b>, column&nbsp;<b><i><span
+  style='font-family:"Comic Sans MS"'>c</span></i></b>, returning success or
+  error status.</p>
+  </td>
+ </tr>
+</table>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Puzzle Module Internal (static) Functions</span><span
+style='mso-fareast-font-family:"Times New Roman";color:#00BB00'><o:p></o:p></span></h3>
+
+<p>The puzzle module also declares and defines a set of utility functions to
+aid in implementing the interface. As these are internal to the module, you are
+not required to use them - you can <span class=SpellE>arugment</span> or
+replace them with other functions of your own design (replacement requires <i><u>complete</u></i>
+eradication of <i><u>all</u></i> traces of the replaced functions).</p>
+
+<p><b><span style='font-family:"Helvetica","sans-serif";color:#CC0000'>Note (if
+you use your own ideas):</span></b><span style='font-family:"Helvetica","sans-serif"'><o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo1;tab-stops:list .5in'>You are still responsible for
+     providing <i><u>all</u></i> the specified interface behavior for <i><u>each</u></i>
+     level of functionality, and</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo1;tab-stops:list .5in'>Your code must still adhere to
+     high qualities of structure, naming, <span class=SpellE>documentaition</span>,
+     and partitioning. Long, convoluted, poorly indented or inadequately
+     documented code will cost you dearly in terms of quality.</li>
+</ul>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Tasks &amp; Deliverables<o:p></o:p></span></h2>
+
+<p>The project is organized as a sequence of six functionality levels. Each
+level requires you to extend the work done at the previous level. For each
+level 1 through 6 you will fill out the associated estimating, tracking, and
+reflection activity outlined in the file <b><span style='font-family:"Helvetica","sans-serif"'>Track+Reflect.doc</span></b>.
+15% of your project grade rides on your attention to the details of estimating
+the time it will take you to complete the activity, track that time and
+accurately record it when the level is done, and provide thoughtful reflection
+on the work you did. Some levels are relatively straightforward and require
+less in the way of reflection. Still, if you have little in the way of
+thoughtful reflection for any of the activities and the overall summary, expect
+to be docked heavily.</p>
+
+<p>Similarly, 15% of your grade is based on the quality of your implementation.
+Aspects considered include:</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list .5in'><b>Naming:</b> Are variable,
+     function and other names meaningful? Do they have a clear relation to
+     their role in the computation? Would a competent developer be able to pick
+     up this code and understand why you chose the names you did?</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list .5in'><b>Documentation:</b> Do you
+     use comments to simply repeat the code or to provide insight into its
+     context and intention? Are comments, clear, concise, and correct? Are
+     comments readable - do they avoid distracting grammatical and spelling errors?
+     Are the aligned with the code to make it obvious which comments refer to
+     which sections of code?</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list .5in'><b>Structure</b>: Are the
+     bodies of functions organized into clear, coherent sets of statements that
+     clearly contribute to the function's goals? As appropriate, are sections
+     of code factored out into local functions of their own, either to simplify
+     the original function, to enhance readability, or to adhere to DRY (Don't
+     Repeat Yourself)?</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list .5in'><b>Style</b>: Does the layout
+     of the code enhance its readability? Do you use consistent indentation in
+     line with examples done in class? Do you use blank lines to separate
+     distinct blocks of code? Do you use spaces to enhance readability (or are
+     expressions scrunched together, making it difficult to distinguish
+     variables from operators from constants)?</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo2;tab-stops:list .5in'><b>Source Code Control</b>:
+     Did you demonstrate appropriate us of source code management during the
+     development of the project? Did you provide well-written 
+     comments for each commit? Is your test code under source
+     control?</li>
+</ul>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 0 (Compiles &amp; Links)</span><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+
+<p>This is a pseudo level, in that all your <span class=SpellE>puzzle.c</span>
+must do is compile and link against the rest of the program, and your
+Track+Reflect.doc must contain a reflection on whatever you did. As these
+conditions can be met by simply submitting the <span class=SpellE>puzzle.c</span>
+skeleton in the zip file and almost anything for <span class=SpellE>thetracking</span>
+and reflection, this is really a test of whether you can submit to <span
+class=SpellE>myCourses</span>. </p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 1 (Puzzle Module Initialization and
+Printing of an Empty Puzzle)<o:p></o:p></span></h3>
+
+<p>Fill in the body of the <span class=SpellE><b><span style='color:#3333FF'>init_<span
+class=GramE>puzzle</span></span></b></span><span class=GramE><b><span
+style='color:#3333FF'>(</span></b></span><b><span style='color:#3333FF'>)</span></b>
+function and write the <span class=SpellE><b><span style='color:#3333FF'>print_puzzle</span></b></span><b><span
+style='color:#3333FF'>()</span></b> function. Skeletons for two static methods
+related to printing are there for your completion and use: <span class=SpellE><b><span
+style='color:#3333FF'>print_<span class=GramE>dashes</span></span></b></span><span
+class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+style='color:#3333FF'>)</span></b> and <span class=SpellE><b><span
+style='color:#3333FF'>print_row</span></b></span><b><span style='color:#3333FF'>(row)</span></b>.
+When your modifications compile and link, test them using make:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Helvetica","sans-serif"'>make</span></b></span><b><span style='font-family:
+"Helvetica","sans-serif"'> test_l1<o:p></o:p></span></b></p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 2 (Initialization, Configuration and
+Printing of a Real Puzzle)<o:p></o:p></span></h3>
+
+<p>Fill in the body of the <span class=GramE><b><span style='color:#3333FF'>configure(</span></b></span><span
+class=SpellE><b><span style='color:#3333FF'>puzzle_file</span></b></span><b><span
+style='color:#3333FF'>)</span></b> function, ignoring any error conditions for
+now. This requires you to</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l8 level1 lfo3;tab-stops:list .5in'>Read three digit characters
+     and a newline from the file whose handle is the argument (see the <b><span
+     style='font-size:10.0pt;font-family:"Helvetica","sans-serif"'>Puzzle
+     Configuration File Format</span></b> section).</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l8 level1 lfo3;tab-stops:list .5in'>Convert each digit character
+     to the number it represents,</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l8 level1 lfo3;tab-stops:list .5in'>Place the value in the puzzle
+     cell designated by the row and column, and finally,</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l8 level1 lfo3;tab-stops:list .5in'>Mark the selected cell as
+     fixed.</li>
+</ul>
+
+<p class=MsoNormal>When your modifications compile and link, test them using
+make:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Helvetica","sans-serif"'>make</span></b></span><b><span style='font-family:
+"Helvetica","sans-serif"'> test_l2<o:p></o:p></span></b></p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 3 (Add and Erase Commands)<o:p></o:p></span></h3>
+
+<p>Fill in the bodies of <span class=SpellE><b><span style='color:#3333FF'>add_<span
+class=GramE>digit</span></span></b></span><span class=GramE><b><span
+style='color:#3333FF'>(</span></b></span><b><span style='color:#3333FF'>row, <span
+class=SpellE>col</span>, digit)</span></b> and <span class=SpellE><b><span
+style='color:#3333FF'>erase_digit</span></b></span><b><span style='color:#3333FF'>(row,
+<span class=SpellE>col</span>)</span></b>, ignoring any error conditions for
+now.</p>
+
+<p>When your modifications compile and link, test them using make:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Helvetica","sans-serif"'>make</span></b></span><b><span style='font-family:
+"Helvetica","sans-serif"'> test_l3<o:p></o:p></span></b></p>
+
+<p>This runs three tests: one a simple test of adding, one a simple test of
+erasing, and one which&nbsp;solves a real puzzle - the last&nbsp;printout shows
+a completed puzzle.<b><o:p></o:p></b></p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 4 (Syntax and Simple Add/Erase Errors)<o:p></o:p></span></h3>
+
+<p class=MsoNormal>Change the <b><span style='color:#3333FF'>configure</span></b>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo4;tab-stops:list .5in'>Discard everything after the
+     three digit characters up to and including the next newline&nbsp;or <b>EOF</b>.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo4;tab-stops:list .5in'>Check to ensure they are all
+     digit characters in the range '1' through '9'; if any are not in range,
+     print the message:<br>
+     &nbsp; &nbsp; <b>Illegal format in configuration file at line <i>N</i></b>,
+     where <b><i>N</i></b> is the line number, and call <span class=GramE><b><span
+     style='color:#3333FF'>exit(</span></b></span><b><span style='color:#3333FF'>1)</span></b>.<br>
+     You may find it useful to complete the skeleton helper function <span
+     class=SpellE><b><span style='color:#3333FF'>in_<span class=GramE>range</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>value)</span></b>.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo4;tab-stops:list .5in'>Ensure that the cell at the
+     selected row and column is not already filled with a value; if it is,
+     print the message:<br>
+     &nbsp; &nbsp; <b>Illegal placement in configuration file at line <i>N</i></b>,
+     where, once again, <b><i>N</i></b> is the line number, and call <span
+     class=GramE><b><span style='color:#3333FF'>exit(</span></b></span><b><span
+     style='color:#3333FF'>1)</span></b>.</li>
+</ol>
+
+<p>Change the <span class=SpellE><b><span style='color:#3333FF'>add_digit</span></b></span>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l5 level1 lfo5;tab-stops:list .5in'>If any of the three arguments
+     is not in the range <span class=GramE>1 ..</span> 9, return <b><span
+     style='color:#3333FF'>OP_BADARGS</span></b> without changing the
+     puzzle.&nbsp;You may find the&nbsp;helper function <span class=SpellE><b><span
+     style='color:#3333FF'>in_<span class=GramE>range</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>value)</span></b> useful.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l5 level1 lfo5;tab-stops:list .5in'>If the selected cell already
+     has a value in it (i.e., it is non-zero), return <b><span
+     style='color:#3333FF'>OP_OCCUPIED</span></b> without changing the puzzle.</li>
+</ol>
+
+<p>Change the <span class=SpellE><b><span style='color:#3333FF'>erase_digit</span></b></span>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo6;tab-stops:list .5in'>If either of the two
+     arguments is not in the range <span class=GramE>1 ..</span> 9, return <b><span
+     style='color:#3333FF'>OP_BADARGS</span></b> without changing the <span
+     class=SpellE>puzzle.You</span> may find the&nbsp;helper function <span
+     class=SpellE><b><span style='color:#3333FF'>in_<span class=GramE>range</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>value)</span></b> useful.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo6;tab-stops:list .5in'>If the selected cell is
+     already empty (i.e., its value is 0), return <b><span style='color:#3333FF'>OP_EMPTY</span></b>
+     without changing the puzzle.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo6;tab-stops:list .5in'>If the selected cell is fixed
+     (non-<span class=SpellE>eraseable</span>), return <b><span
+     style='color:#3333FF'>OP_FIXED</span></b> without changing the puzzle.</li>
+</ol>
+
+<p>When your modifications compile and link, test them using make:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Helvetica","sans-serif"'>make</span></b></span><b><span style='font-family:
+"Helvetica","sans-serif"'> test_l4<o:p></o:p></span></b></p>
+
+<p>This runs a series of tests, the first few with different combinations of
+bad configuration files, and a last one with a valid puzzle but bad (<b>a</b><span
+class=GramE>)<span class=SpellE>dd</span></span> and (<b>e</b>)<span
+class=SpellE>rase</span> commands.<b><o:p></o:p></b></p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 5 (Row and Column Rule Violations)<o:p></o:p></span></h3>
+
+<p class=MsoNormal>Change the <b><span style='color:#3333FF'>configure</span></b>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo7;tab-stops:list .5in'>Check to ensure that the value
+     being placed in the puzzle is not already in the row or column specified.
+     If it would be a duplicate, print the message:<br>
+     &nbsp; &nbsp; <b>Illegal placement in configuration file at line <i>N</i></b>,
+     where <b><i>N</i></b> is the line number, and call <span class=GramE><b><span
+     style='color:#3333FF'>exit(</span></b></span><b><span style='color:#3333FF'>1)</span></b>
+     - you may want to add this check onto the previous one that produces this
+     message. You may find it useful to complete the skeleton helper functions <span
+     class=SpellE><b><span style='color:#3333FF'>row_<span class=GramE>contains</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>row, digit)</span></b> and <span class=SpellE><b><span
+     style='color:#3333FF'>col_contains</span></b></span><b><span
+     style='color:#3333FF'>(<span class=SpellE>col</span>, digit)</span></b>.</li>
+</ol>
+
+<p>Change the <span class=SpellE><b><span style='color:#3333FF'>add_digit</span></b></span>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l9 level1 lfo8;tab-stops:list .5in'>Check to ensure that the value
+     being added in the puzzle is not already in the row or column specified.
+     If it would be a duplicate, return <b><span style='color:#3333FF'>OP_ILLEGAL</span></b>
+     without changing the puzzle.<br>
+     You may find the helper functions&nbsp;<span class=SpellE><b><span
+     style='color:#3333FF'>row_<span class=GramE>contains</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>row, digit)</span></b> and <span class=SpellE><b><span
+     style='color:#3333FF'>col_contains</span></b></span><b><span
+     style='color:#3333FF'>(<span class=SpellE>col</span>, digit)</span></b>
+     useful.</li>
+</ol>
+
+<p class=MsoNormal>When your modifications compile and link, test them using
+make:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Helvetica","sans-serif"'>make</span></b></span><b><span style='font-family:
+"Helvetica","sans-serif"'> test_l5<o:p></o:p></span></b></p>
+
+<p class=MsoNormal>This runs a series of tests, the first few with different
+combinations of bad configuration files, and a last one with a valid puzzle but
+bad (<b>a</b><span class=GramE>)<span class=SpellE>dd</span></span> commands.</p>
+
+<h3><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#00BB00'>Level 6 (Region Rule Violations)<o:p></o:p></span></h3>
+
+<p class=MsoNormal>Change the <b><span style='color:#3333FF'>configure</span></b>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l7 level1 lfo9;tab-stops:list .5in'>Check to ensure that the
+     value being placed in the puzzle is not already in the region specified.
+     If it would be a duplicate, print the message:<br>
+     &nbsp; &nbsp; <b>Illegal placement in configuration file at line <i>N</i></b>,
+     where <b><i>N</i></b> is the line number, and call <span class=GramE><b><span
+     style='color:#3333FF'>exit(</span></b></span><b><span style='color:#3333FF'>1)</span></b>
+     - you may want to add this check onto the previous one that produces this
+     message. You may find it useful to complete the skeleton helper function <span
+     class=SpellE><b><span style='color:#3333FF'>region_<span class=GramE>contains</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>row, <span class=SpellE>col</span>, digit)</span></b>.</li>
+</ol>
+
+<p>Change the <span class=SpellE><b><span style='color:#3333FF'>add_digit</span></b></span>
+function:</p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l6 level1 lfo10;tab-stops:list .5in'>Check to ensure that the
+     value being added in the puzzle is not already in the region specified. If
+     it would be a duplicate, return <b><span style='color:#3333FF'>OP_ILLEGAL</span></b>
+     without changing the puzzle.<br>
+     You may find the&nbsp;helper function <span class=SpellE><b><span
+     style='color:#3333FF'>region_<span class=GramE>contains</span></span></b></span><span
+     class=GramE><b><span style='color:#3333FF'>(</span></b></span><b><span
+     style='color:#3333FF'>row, <span class=SpellE>col</span>, digit)</span></b>
+     useful.</li>
+</ol>
+
+<p class=MsoNormal>When your modifications compile and link, test them using
+make:</p>
+
+<p style='margin-left:30.0pt'><span class=GramE><b><span style='font-family:
+"Helvetica","sans-serif"'>make</span></b></span><b><span style='font-family:
+"Helvetica","sans-serif"'> test_l6<o:p></o:p></span></b></p>
+
+<p>This runs a series of tests, the first few with different combinations of
+bad configuration files, and a last one with a valid puzzle but bad (<b>a</b><span
+class=GramE>)<span class=SpellE>dd</span></span> commands.<b><o:p></o:p></b></p>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Assessment<o:p></o:p></span></h2>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0
+ style='mso-cellspacing:.7pt;margin-left:22.5pt;mso-yfti-tbllook:1184;
+ mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 0 (<span class=SpellE>puzzle.c</span> compiles and
+  links)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>10</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 1 (initialize and print empty puzzle)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>10</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 2 (initialize, configure and print a real puzzle)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>15</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 3 (add, erase and solve a real puzzle)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>15</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 4 (detect bad syntax and simple add / erase errors)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>5</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 5 (detect adding duplicate values in row or column)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>5</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Level 6 (detect adding duplicate values in a region)</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>10</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Estimation, tracking, analysis and reflection</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>15</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal>Implementation quality, source control</p>
+  </td>
+  <td valign=top style='padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal align=right style='text-align:right'>15</p>
+  </td>
+ </tr>
+</table>
+
+<h2><span style='font-family:"Helvetica","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:#009900'>Submission</span><span style='mso-fareast-font-family:
+"Times New Roman";color:#009900'><o:p></o:p></span></h2>
+
+<p>The directory in your repository for this assignment is <code>Sudoku</code>. As you complete the tasks for each level, continue making commits. Be sure to fill in the Track+Reflect.doc and your program passes the
+associated tests.</p>
+
+<p>You may submit up to 24 hours late with a 15% penalty. No submissions are accepted after 24
+hours from the due date.</p>
+
+<p>You may submit as many times as you like - we suggest at least once per
+level, with&nbsp;<b>Track+Reflect.doc</b> incorporating the work up through
+that level. We will only evaluate the last submission you make.</p>
+
+<p><b><span style='color:red'>CAVEAT:</span></b>&nbsp; We assume that you, as a
+matter of course, check each submission to ensure it was properly pushed. 
+Thus we will not be swayed by statements like &quot;I submitted it
+and don't know what happened.&quot;</p>
+
+</div>
+
+</body>
+
+</html>

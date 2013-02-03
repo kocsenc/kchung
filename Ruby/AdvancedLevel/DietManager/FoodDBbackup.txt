@@ -1,0 +1,22 @@
+Slice Cheese Pizza,b,272
+Mac and Cheese,b,230
+20 McNuggets,b,935
+Whole Egg,b,13
+Soda Can,b,90
+Cookie,b,58
+Watermelon,b,920
+Fried Chicken,b,365
+KoolAid,b,120
+Soup,b,161
+Salad,b,33
+Pickles,b,8
+tomato,b,11
+Turkey,b,259
+Roast Beef,b,432
+Salame,b,332
+Bacon,b,743
+Pepperoni,b,543
+Canadian Bacon,b,640
+Bologna,b,120085
+DAGarbage PLATE,r,Canadian Bacon,Bacon,tomato,Mac and Cheese,20 McNuggets
+Chicken with Salad,r,bacon,bacon,fried chicken,fried chicken,fried chicken

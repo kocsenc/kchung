@@ -1,0 +1,296 @@
+4010-350 Process & Reflection
+Ruby – Diet Manager
+
+Name: KOCSEN CHUNG
+
+================================================================
+Level 1 – Food DB Load – Start
+Estimated Time	00:25
+Plan for this level:
+
+	Read FoodDB.txt file and build up food database
+		Parse file using input
+			While line = getline
+			line.split by commas
+			Check if size >= 3
+
+			check if input[1] is "r"
+				parse for new basic food -> Need food class
+			else if input[1] is "b"
+				parse for new recipe - need recipe holder of foods
+					
+
+	Start CLI (commands for quit and print all)
+		Case quit
+			start shutdown sequence (method)(!)
+		case print all
+			call print method (!)
+
+	Startup in main file
+		Read FoodDB
+		Start CLI
+		
+	BasicFood class
+		name:str
+		calories:int
+		inRecipe:bool
+
+** Plan version 2
+	Food file fro BasicFood class
+		name
+		calories
+	
+	Recipe file for Recipe class
+		name
+		calories
+		ingredients []:BasicFood
+	
+	main
+		will parse file in fileio.rb file
+		will handle commands (quit, print all)
+			quit - system close
+			print all- will pull from FoodDB.rb, as it is the container
+
+
+
+Level 1 – Food DB Load – Complete
+Actual Time	01:05
+Lessons learned, problems encountered, obstacles overcome, etc.
+
+I learned that since this project had no skeleton code, there is alot more to
+planning than meets the eye. For example, I had to sit down and get my head
+straight on whats files and classes where going to go and how they were going to
+interact with each other. AS a result, this design part was definitley
+something unexpected with this project. Good thing I started early as this seems
+like a more thoughful procedure, the code itself is not an issue.
+
+It took longer than expected due to the abovementioned also because I had 
+to think ahead making the complexity of this basic code a little higher.
+
+Additionally, its important to note that there are unit test files involved
+which adds to the level of work. 
+
+================================================================
+Level 2 – Print & Find – Start
+Estimated Time	00:15
+Plan for this level:
+
+	Use regex in the case block to find for print XXX and for find XXX
+	Then implement a find method and a print item method
+
+	FIND
+		parse prefix use regex
+		use dictionary implementation of database to print every key that has the given prefix using regex. (/prefix\w+/)
+		print the value.to_s at that key
+
+	PRINT
+		parse print query using regex
+		find key of 'query'
+		if found print
+		else show system not found message
+
+
+Level 2  – Print & Find – Complete
+Actual Time	00:30
+Lessons learned, problems encountered, obstacles overcome, etc.
+
+One of the major games with this part was the regex. I have been playing around with Ruby Regex for some time and I am starting to see how powerful it is. That took quite a chunck of time. 
+
+On the other hand, figuring out that case/when blocks in ruby wont run
+if the block after the when is true, only if the case given is equals,
+which implemented even more regex.
+
+Since we only had to implement two methods, it did not take too long.
+
+The extra time was spent writing test cases for the already built methods.
+
+I feel that this beggining part means everything to the project because its like a building foundation; it has to withstand all the future iterations.
+
+During this level I also worked on the unit tests. I think working on unit tests are very time consuming
+and sometimes, the benefits seem too limited. I spent quite some time debugging
+a test to work fine with my classes, which was consuming.
+
+On the good side, however, I can now re-run these and be confident that my code works.
+Regression testing at its finest.
+
+================================================================
+Level 3 – Database Update – Start
+Estimated Time	00:30
+Plan for this level: For this level you will add the commands that can update the database: new food, new recipe, save, and the change to quit to check for modification before exiting.
+
+	New Food
+		Call database add food with the given parameters
+
+	New Recipe
+		Call database add Recipe with the given parametrs
+
+	Save (fileI/O)
+		Put the whole database into a temporary Array to sort
+			This is to make sure that you are not placing a recipe before the food was created
+		Use the CSV to write the file down
+		Execute shutdown sequence (if quit)
+
+
+
+Level 3 – Database Update  – Complete
+Actual Time	00:35
+
+Lessons learned, problems encountered, obstacles overcome, etc.
+
+I have not written tests for level three yet. This turned out to be pretty
+simple because I used the same implementation for find prefix. In other words
+using the regular expressions for parsing new food and new recipe appropriately.
+This required some modifying on the main database class, which included simply
+adding for extra checks. (ie making sure that calories are all numbers).
+
+This brought a great point; the fact that future code will consist of 
+refactoring of older code. In fact, it challenged how solid my previous,
+code was which finally made me feel rewarded because a lot of time 
+was spent on the beggining code that many of my peers called trivial.
+
+================================================================
+Level 4 – Logging Foods – Start
+Estimated Time	1:00
+Plan for this level:
+
+For this level I need 3 main things.
+Make a LogItem class, a Log class and tweak everything that handles them.
+
+	Main/tweak
+		-Add the log functions
+			- Add with name only >>// These are to be methods
+			- Add with date >>>>>>>// inside the Log class
+		-Call parse method for log file (in fileio.rb)
+			- Log file will be in this format: "YYYY-MM-DD,foodName"
+			- ONLY YEAR MONTH AND DAY
+		- Implement a save method (write) for log
+
+	Log Class
+		- Will be a hash with key as date object.
+			- Value will be array of logItems
+
+	Log Item
+		- Contain a Date and Name for initialize	
+		- Date: Date; Name:String
+
+
+
+Level 4 – Logging Foods – Complete
+Actual Time	01:00
+Lessons learned, problems encountered, obstacles overcome, etc.
+
+This is the level where I got the most frustrated. This was
+because I didnt plan out the design of these brand new 
+Classes like I did with the previous ones. So there was 
+quite a chunk of times spent coding and fixing.
+After 20, 30 minutes or so, I was getting frustrated because
+runtime bugs were present.
+
+As a result I sat down, drew some class diagrams and figured everything
+out. This was only to realize that most of the code I wrote had good
+stuff in it. A matter of reordering it. The code length was reduced 
+because when I was designing there were apparent patterns which mad me reuse 
+my code.
+
+So I learned that designing before hand is definitley the way to go. 
+The second lesson for this level is to not be afraid to refactor code
+and the third, to find patterns and have reusable/useful methods. 
+
+
+
+================================================================
+Level 5 – Show & Delete – Start
+Estimated Time	00:45
+Plan for this level:
+
+Considering I need to write the tests, the estimate is quite higher.
+
+	Show
+		-Encapsulate to have only 1 print method which
+		takes in a date and prints everything for that date.
+		-Change the show all to call this new method given 
+		different dates.
+		-Of course, use the to_s method already implemented
+
+	Delete #given name and date
+		Check log hash@date
+		Traverse through the array
+			If names match
+				check for count > 1
+					reduce count, break
+				if count <= 1
+					eliminate the logItem from array, break
+		if no change was done, display no such food message
+
+	NEW
+		ADD file writing for diet file
+		which means implementing a ordered array
+		to print in ascending order. 
+
+
+
+Level 5 – Show & Delete – Complete
+Actual Time	01:45
+Lessons learned, problems encountered, obstacles overcome, etc.
+
+Most of the things I had to do were done. I spent most of the time 
+writing tests and documenting.
+
+The most important thing I learned with this level is to use
+the tools available. I never thought I would use the comparator
+module, and it seems like it saved me a lot of time and made my code
+more powerful. 
+
+Additionally, I figured out that there is a easy way through tests.
+Testing doesn't have to be tedious. The first tests were very
+tedious, but once you know what to do and what to type, then they 
+breeze through, which happened now.
+
+================================================================
+Overall Summary
+Estimated Total Time	02:55
+Actual Total Time		04:55
+
+Project reflection:
+
+This project is by far the most fun I have had this year.
+Allowing personal implementation makes the project
+more of an involvement than a filler of skeleton.
+It made it very personal and I found myself wanting
+to work on it more and more each time. 
+
+When it comes to what I learned; the list is pretty long.
+
+Lets start with design = power. I had a little lapse during
+level 4 where the approach was a code and fix; To say the least
+I have never been frustrated with code as much. Designing
+before hand and putting things clear in your head will 
+modularize the contents enough to make coding a thruway
+rather than a "as you go" methodology. 
+
+Second, I learned alot about myself and my work ethic. 
+I can't work in loud environments and coding requires alot of 
+my attention. I also learned that I use my resources effectively
+and I have a good notion of when to take shortcuts and when not to.
+For example, the use of the CSV,Date module or the Comparator interface.
+Moreover, I proved to myself and my peers that my ideas
+when it comes to the base structure of the project, seems to 
+be very solid. For example the fact that my log and DataBase
+were both hashes; especially keeping the date as a key, which
+made logical sense.
+
+Third, there is the encapsulation and the power of O-O.
+Calling methods within methods and have them yield
+content that is specific to the implementation is
+just great.
+
+Fourth, Refactoring is good. When the code feels bad, 
+refactor it completely and it will most likley result to be a better
+iteration than the previous one.
+
+Fifth, Tests shoulnt be too complicated! Keep them simple.
+
+Sixth, Trust your code, it will do what you want it to do if you put the thought.
+
+Overall this project was a great way to make me fall in love with 
+Ruby and a solid self experimenting activity. 
