@@ -22,7 +22,7 @@ class DB
 			name.upcase!
 			puts @db[name].getName
 			comboArray = @db[name].getComboNames
-			puts( @db[comboArray[0]].has_to_s +" + " + @db[comboArray[1]].has_to_s) 
+			puts( @db[comboArray[0]].has_to_s + " + " + @db[comboArray[1]].has_to_s) 
 			puts @db[name].getExtra
 		else
 			puts name+" was not found!"
@@ -39,13 +39,19 @@ class DB
 		end
 	end
 
+	# print professions who have been unlocked
 	def printAttainedProfessions
 		@db.each{|k,v| puts v.getName if v.unlocked}
 	end
 
+	# print locked professions
 	def printUnattainedProfessions
 		@db.each{|k,v| puts v.getName if !v.unlocked}
 	end
+	
+	def find(param)
+		@db.each{|k,v| puts v.getName if v.start}	
+	end	
 
 
 	def getArray()

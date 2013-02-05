@@ -9,10 +9,12 @@ require './DB'
 def parse()
 	begin
 		db = DB.new()
+		count = 1
 		CSV.foreach("./ppeopleDB.dat") do |line|
 			# Profession, combo, productivity, structure, gameName, has?
-			line.each{|x| x.upcase!}
-			puts "Size is: " + line.size.to_s
+			line.each{|x| x.upcase! }#if x.is_a?String}
+			#DEBUG: puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
+			count += 1
 			if line.size == 5
 				db.add(line[0],line[1],line[2],line[3],line[4],false)
 			elsif line.size == 6
@@ -26,7 +28,7 @@ def parse()
 		end # CSV foreach end
 		return db
 	rescue
-		abort("Critical Error parsing the DataBase")
+		abort("RESCUE: Critical Error parsing the DataBase")
 	end #end try/catch
 end #end method
 

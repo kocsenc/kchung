@@ -40,6 +40,11 @@ def main()
 			param.upcase!
 			db.have?(param)
 
+		when /find\s+/
+			param = input.gsub(/find\s+/,"")
+			param.upcase!
+			db.find(param)
+
 		when "show unlocked"
 			db.printAttainedProfessions
 
@@ -56,17 +61,23 @@ def main()
 			sysout("|                    | 	professions               |")
 			sysout("|   show locked      | Show locked professions    |")
 
+		when "exit", "exit()", "q", "quit()", "quit"
+			abort("Exitting")
 		else
 			sysout("Invalid command\nType 'h or 'help' for help")
 		end
 		
-
+	puts "\n"
 	end #end while true loop
 
 end
 
 def sysout(par)
 	puts "[SYSTEM] " + par.to_s
+end
+
+def shutdown()
+	puts "Saving"
 end
 	
 
