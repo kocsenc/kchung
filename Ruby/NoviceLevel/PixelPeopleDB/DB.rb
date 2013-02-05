@@ -39,6 +39,28 @@ class DB
 		end
 	end
 
+	def lock(name)
+		name.upcase!
+		if @db.has_key?(name)
+			@db[name].unlocked = false
+			puts name+ " was locked!"
+		else
+			puts name+ " was not found!"
+		end
+
+	end
+
+	def unlock(name)
+		name.upcase!
+		if @db.has_key?(name)
+			@db[name].unlocked = true
+			puts name+ " was unlocked!"
+		else
+			puts name+ " was not found!"
+		end
+
+	end
+
 	# print professions who have been unlocked
 	def printAttainedProfessions
 		@db.each{|k,v| puts v.getName if v.unlocked}
@@ -50,7 +72,8 @@ class DB
 	end
 	
 	def find(param)
-		@db.each{|k,v| puts v.getName if v.start}	
+		param.upcase!
+		@db.each{|k,v| puts v.getName if (v.getName).start_with?(param)}	
 	end	
 
 

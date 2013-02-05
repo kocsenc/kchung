@@ -13,7 +13,7 @@ def parse()
 		CSV.foreach("./ppeopleDB.dat") do |line|
 			# Profession, combo, productivity, structure, gameName, has?
 			line.each{|x| x.upcase! }#if x.is_a?String}
-			#DEBUG: puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
+			puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
 			count += 1
 			if line.size == 5
 				db.add(line[0],line[1],line[2],line[3],line[4],false)
@@ -36,7 +36,7 @@ end #end method
 def save(db)
 	begin
 		pplArray = db.getArray()
-		CSV.open("./ppeopleDB.dat") do |csv|
+		CSV.open("./ppeopleDB.dat", wb) do |csv|
 			pplArray.each { |person|
 				ar = Array.new
 				has = "T" if person.unlocked

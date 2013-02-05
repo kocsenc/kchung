@@ -19,6 +19,7 @@ def main()
 
 	puts("Welcome to the Pixel People Helper Program v0.1")
 	puts(" For help type in 'help' or 'h' ")
+	edit = false
 	while true do
 
 		sysout( "Type in command please")
@@ -30,6 +31,25 @@ def main()
 		input.downcase!
 
 		case input
+		when /unlock\s+/
+			param = input.gsub(/unlock\s+/, "")
+			param.upcase!
+			db.unlock(param)
+			edit = true
+
+		when /lock\s+/
+			param = input.gsub(/lock\s+/, "")
+			param.upcase!
+			db.lock(param)
+			edit = true
+
+		when "save"	
+			if edit
+				save(db)
+			else
+				sysout("No changes were made, cant save")
+			end
+
 		when /info\s+/
 			param = input.gsub(/info\s+/,"")
 			param.upcase!
@@ -60,9 +80,13 @@ def main()
 			sysout("|   show unlocked    | Will show unlocked         |")
 			sysout("|                    | 	professions               |")
 			sysout("|   show locked      | Show locked professions    |")
+			sysout("|  find [NAME]       | to find if profession exist|")
+			sysout("| lock/unlock [NAME] | tell program to lock/unlock|")
+			sysout("| ")
+
 
 		when "exit", "exit()", "q", "quit()", "quit"
-			abort("Exitting")
+			shutdown(edit,db)
 		else
 			sysout("Invalid command\nType 'h or 'help' for help")
 		end
@@ -76,8 +100,16 @@ def sysout(par)
 	puts "[SYSTEM] " + par.to_s
 end
 
-def shutdown()
-	puts "Saving"
+def shutdown(edit,db)
+	sysout ("System going for shutdown")
+	if edit
+		save(db)
+		sysout ("All changes have been saved...")
+	else
+		sysout ("No changes have been made")
+	end
+	abort ("Pixel People Helper Terminated")
+
 end
 	
 
