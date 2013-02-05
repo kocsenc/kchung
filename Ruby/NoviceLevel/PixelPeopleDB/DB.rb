@@ -20,15 +20,15 @@ class DB
 	def infoOn(name)
 		if @db.has_key?(name)
 			name.upcase!
-			puts "=================== THE " + @db[name].getName + " ====================="
+			puts "=================== " + @db[name].getName + " ======================"
 			comboArray = @db[name].getComboNames
-
+			#puts comboArray.inspect
 			if @db[comboArray[0]]!=nil and @db[comboArray[1]]!=nil
-				print "Combination:\t"
+				print "Combination:\t"	
 				puts( @db[comboArray[0]].has_to_s + " + " + @db[comboArray[1]].has_to_s)
 				puts "\n"
 			else
-				puts "Combination:\t\t NA"
+				puts "Combination:\t\t NA or Special Profession"
 				puts "\n"
 			end
 
