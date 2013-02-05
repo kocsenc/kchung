@@ -1,0 +1,151 @@
+Mayor,N/A,1 CPS,Town Hall,Adam Zappel
+Mechanic,N/A,1 CPS,Arrival Center,Eve Jobs
+Engineer,Mayor + Mechanic,2 CPS,Garage, Utopium Mine,Cameron Shaft
+Sheriff,Mayor + Mayor,2 CPS,Sheriff's Office,Chuck Walker
+Architect,Mayor + Engineer,1 CPS,Town Hall, Building Firm,Bill Ding/Renee Saunce
+Landscaper,Assistant + Architect,1 CPS,Nursery,Mary Gould/Toby Airey
+Deputy,Assistant + Sheriff,1 CPS,Sheriff's Office, Police Station,Justine Case, Justin Case
+Gardener,Landscaper + Deputy,1 CPS,Greenhouse, Nursery,Chris Anthemum, Rose Bush
+Mechanical Engineer,Mechanic + Engineer,1 CPS,Garage, Construction Yard,Anita Gere/Andy Friese
+Botanist,Farmer + Farmer,1 CPS,Greenhouse,Jasmine Woods
+Park Ranger,Sheriff + Landscaper,1 CPS,Park,Eva Gladys, Forrest Greening
+Firefighter,Mechanic + Police Officer,1 CPS,Fire Station,Helen Bach, Paul Slider
+Farmer,Engineer + Gardener,1 CPS,Farm, Greenhouse, Farmer's Market,Corona Cobb/Brighton Earley
+Doctor,Engineer + Nurse,1 CPS,Clinic, Hospital,Sandra Gupta/Gregory Holmes
+Nurse,Homemaker + Gardener,1 CPS,Pharmacy, Clinic, Hospital,Leon Downe, Diana Way
+Police Officer,Sheriff + Sheriff,1 CPS,Bank, Courthouse,Police Station,Barry Cade/Macy Cannister
+Vet,Park Ranger + Doctor,1 CPS,Animal Shelter,Doug Breeder, Ruby Schott
+Homemaker,Farmer + Gardener,1 CPS,Farm, Farmer's Market,Agatha Stewart/Bradley Dunne
+Zoologist,Botanist + Vet,1 CPS,Research Lab, Animal Shelter, Aquarium,Reena Soros
+Plumber,Engineer + Assistant,1 CPS,City Square,Peter Piper/Mary Piper
+Fishmonger,Farmer + Plumber,1 CPS,Lakehouse, Farmer's Market,Brooke Waters
+Animal Trainer,Sheriff + Vet,1 CPS,Animal Shelter,Tom Katz/Kitty Katz
+Milkmonger,Farmer + Animal Trainer,1 CPS,Farmer's Market,Leia Pasteur, Moose Moore
+Artist,Architect + Dreamer,1 CPS,Arcade, Gallery,Wendy Warhall
+Photographer,Mechanic + Artist,1 CPS,Photo Shop, Gallery, Weddings R Us,Winsta Graham
+Dentist,Doctor + Artist,1 CPS,Dentist's Office,Sirius D'Kaye, Ginger Whitehouse
+Radiologist,Doctor + Photographer,1 CPS,Hospital, Dentist's Office,Claire Beams, Xavier Ray
+Cook,Homemaker + Fishmonger,1 CPS,Diner, Fast Food,Francesca Furter
+Chef,Artist + Cook,1 CPS,Restaurant,Alla Denta
+Zookeeper,Animal Trainer + Park Ranger,1 CPS,Park,Anna Konda, Ali Geiter
+Construction Worker,Mechanical Engineer + Deputy,1 CPS,Construction Yard,Jacqueline Hammer, Jack Hummer
+Car Designer,Mechanical Engineer + Artist,1 CPS,Garage,Alfred Romero, Astrid Martin
+Athlete,Construction Worker + Farmer,1 CPS,Stadium,Stanley Cupp
+Greengrocer,Farmer + Salesman,1 CPS,Ninja HQ, Farmer's Market,Hazel Nutt
+Interior Designer,Architect + Artist,1 CPS,Gallery,Ike Iyer, Shanda Lear
+Olympic Swimmer,Athlete + Fishmonger,1 CPS,Swimming Pool,Brian Thorpe/Michellephelps
+Painter,Artist + Construction Worker,1 CPS,Building Firm, Construction Yard,Jason Pollack
+Hotel Manager,Homemaker + Salesman,1 CPS,Hotel Utopia,Habo Hilton
+Valet,Car Designer + Hotel Manager,1 CPS,Hotel Utopia,Ella Vader
+Pilot,Valet + Mechanic,1 CPS,Space Port,Perez Schute
+Flight Attendant,Pilot + Waiter,1 CPS,Space Port,Cybil Passner
+Aerospace Engineer,Mechanical Engineer + Pilot,1 CPS,Space Admin, Observatory,Daniela Bernoulli, Arthur Burner
+Art Dealer,Artist + Salesman,1 CPS,Gallery,Arthur Major
+Industrialist,Salesman + Salesman,1 CPS,Enterprise,Robin Banks, Iona Bentley
+Jockey,Animal Trainer + Valet,1 CPS,Stable,Orson Spurs, Wendy Ryder
+Marine Biologist,Vet + Olympic Swimmer,1 CPS,Aquarium,Tad Pohl
+Real Estate Agent,Architect + Salesman,1 CPS,Building Firm,Lois Price, Lewis Price
+Soldier,Police Officer + Explorer,1 CPS,Bunker,Private Patty
+Waiter,Cook + Assistant,1 CPS,Restaurant, Diner,Trey Woscher/Clara Tables
+Philosopher,Dreamer + Dreamer,1 CPS,University,Noah Lotte
+Detective,Police Officer + Philosopher,1 CPS,Police Station, Law Firm,Mitch Tracey
+Lawyer,Sheriff + Salesman,1 CPS,Courthouse, Law Firm,Sue Swift, Alvin Mcbeal
+Marine,Soldier + Olympic Swimmer,2 CPS,Bunker,Joe Howser
+Judge,Lawyer + Sheriff,2 CPS,Courthouse,Judy Schuss, Gill Tee
+Secretary,Mayor + Deputy,2 CPS,Bank, Enterprise, Business Center,Phil Cabinet, Pepper Werk
+Writer,Secretary + Dreamer,2 CPS,TV Station, Cafe, Publishing House,Jorge Martinez
+Poet,Writer + Dreamer,2 CPS,Gallery, Cafe, Library,Emmanuel Coloridge, Olga Frost, Amelia Bronte
+Paramedic,Police Officer + Doctor,2 CPS,Fire Station,Justin Thyme, Justina Giffy
+Lifeguard,Olympic Swimmer + Paramedic,2 CPS,Swimming Pool,Angela Anderson
+Model,Photographer + Lifeguard,2 CPS,Photo Shop, Fashion Studio,Orlando Doom, Barb E. Dahl
+Swimsuit Model,Model + Olympic Swimmer,2 CPS,Fashion Studio,Abraham Crombie, Tanya Hide
+Reporter,Detective + Writer,2 CPS,TV Station, News Agency,Sab Channel
+Ballet Dancer,Athlete + Artist,2 CPS,Dance Studio,Rina Belle, Dan Saul-Knight
+Martial Artist,Ballet Dancer + Soldier,2 CPS,Dojo,Lucy Lee
+Sushi Chef,Chef + Martial Artist,2 CPS,Sushi Bar,Anni Agi, Terry Aki
+Food Critic,Cook + Reporter,2 CPS,News Agency,Liv Goode, Eaton Wright
+General,Marine + Soldier,2 CPS,Bunker,Neve Sarandah
+Actor,Director + Model,2 CPS,Theatre, Film Studio,Holly Voode, Bryan Reynolds
+Flight Controller,Architect + Pilot,2 CPS,Space Port,Jett Pastonby
+Calligrapher,Writer + Artist,2 CPS,Gallery,Callie Kravitz, Otto Graff
+Cameraman,Photographer + Mechanic,2 CPS,Photo Shop, TV Station,Phil Maker, Michelle Bay
+Cheerleader,Athlete + Ballet Dancer,2 CPS,Stadium, Dance Studio,Tom Pomm
+Coach,Athlete + Athlete,2 CPS,Stadium,Jim Laucher
+Courier,Mailman + Salesman,2 CPS,Post Office,Dusty Rhodes
+Director,Cameraman + Cameraman,2 CPS,Theatre, Film Studio,Martina Scorcese, Devan Spielburg
+Florist,Farmer + Botanist,2 CPS,Flower Shop, Nursery, Farmer's Market,Dan D'Lyons
+Grave Digger,Farmer + Soldier,2 CPS,Funeral Parlor,Doug Pitts
+Mailman,Reporter + Valet,2 CPS,Post Office,June Parcell
+Miner,Grave Digger + Explorer,2 CPS,Utopium Mine,Jem Stoan
+Cattle Rustler,Jockey + Animal Trainer,2 CPS,Stable, Stadium,Brandon Cattell, Brenda Cattel
+Postmaster General,Mailman + General,2 CPS,Post Office,Philip Lately
+Stunt Double,Actor + Martial Artist,,Film Studio,Oliver Sutton
+Programmer,Mathematician + Engineer,2 CPS,Arcade, Tech Support,Willa Gates, Sakura Gates
+Game Designer,Programmer + Artist,2 CPS,Arcade,Brave Marsh
+Mathematician,Philosopher + Scientist,2 CPS,University, Business Center, Tech Support,Bertha Russel
+Scientist,Philosopher + Engineer,2 CPS,Research Lab,Milly Graham, Miller Graham
+Physicist,Scientist + Mathematician,2 CPS,University,Mary Curry, Wilbert Epstein
+Astronomer,Physicist + Dreamer,2 CPS,Space Admin, Observatory,Stella Eventide, Seymour Stars
+Astronaut,Pilot + Astronomer,2 CPS,Space Admin,Neil Livestrong
+Geneticist,Scientist + Doctor,2 CPS,Gene Pool,Gene Poole, Jean Poole
+Cryptozoologist,Zookeeper + Detective,2 CPS,Research Lab,Holly Mackerel, Marshall Mellow
+Accountant,Secretary + Mathematician,2 CPS,Pharmacy, Bank, Business Center,Pound Fullish, Zoe Ballanser
+Editor,Writer + Writer,2 CPS,Library, Publishing House,Jerry Stein
+Librarian,Writer + Poet,2 CPS,Library,Constance Eyelens
+Historian,Philosopher + Librarian,2 CPS,Museum,William Bison, Anne Teak
+Archaeologist,Historian + Explorer,2 CPS,Museum,Montana Jones
+Super Hero,Soldier + Geneticist,3 CPS,Hero Mansion,Mister Utopia, Miss Demeanor
+Atomic Hero,Radiologist + General,2 CPS,Hero Mansion,Bruce Brooklyn
+Ancient Hero,Preacher + Weather Reporter,2 CPS,Hero Mansion, Astro Church,Andromeda Athenos
+Choreographer,Ballet Dancer + Director,2 CPS,Dance Studio,Eshkol Wachmann, Giselle Ivanov
+Pharmacist,Doctor + Salesman,2 CPS,Pharmacy,Bill D'Spencer, Molly Kuehl
+CSI,Detective + Photographer,3 CPS,Forensic Lab,Danna Caruso, Hiroshi Kane
+Forensic Scientist,Detective + Scientist,3 CPS,Forensic Lab,Gotye Prince, Amanda Katsch
+Physiotherapist,Athlete + Doctor,3 CPS,Spa, Arena, Clinic,Ophelia Payne, Nick Payne
+Coroner,Grave Digger + Doctor,3 CPS,Funeral Parlor,Paula Barer, Paul Barer
+Anti Hero,Grave Digger + Super Hero,3 CPS,Hero Mansion,Wayne Howlett, Spectra Garner
+Wrestler,Athlete + Actor,3 CPS,Arena,Candy Savage
+Clown,Comic + Painter,3 CPS,Circus,Josephine King
+Paleontologist,Archeologist + Crytpozoologist,2 CPS,Museum,Tyrone Suarez, Diana Suarez
+Geologist,Miner + Scientist,3 CPS,Utopium Mine, Observatory,Sandy Marsh, Mandy Marsh
+Break Dancer,Ballet Dancer + Rapper,3 CPS,Dance Studio,Deborah Stepper, Buster Moove
+Captain,Fishmonger + Sheriff,3 CPS,Lakehouse,Claire Waters, Evan Keel
+Weather Reporter,Reporter + Geologist,3 CPS,News Agency,April Schauer
+Comic,Actor + Poet,,,Hugh Morris
+Disc Jockey,Jockey + Choreographer,3 CPS,Radio Station, Dance Studio,Miss Skillet, Mr. Killexx
+First Mate,Captain + Deputy,3 CPS,Lakehouse,Temperance Moore
+Buccaneer,Captain + Explorer,3 CPS,Tavern,Yoho Howe
+Preacher,Philosopher + Dreamer,3 CPS,Astro Church,Ria Carnation, Ryan Carnation
+Rapper,Poet + Disc Jockey,3 CPS,Dance Studio,Six-T Peso, Vicky Minja
+Receptionist,Secretary + Model,3 CPS,Enterprise, Dentist's Office, Hotel Utopia,Brin Beasely, Jim Bernard
+Songwriter,Poet + Poet,3 CPS,Radio Station, Restaurant,Mike Reinhart, Dee Minor
+Taxidermist,Vet + Coroner,3 CPS,Park,Buck Tester, Emma Balmer
+Vocalist,Songwriter + Actor,3 CPS,Radio Station, Bar,Carrie Oakey, Chip Monk
+Assistant,Mechanic + Mechanic,1 CPS,Town Hall, Arrival Center,Sheila Blige, Nestor Cadbury
+Footballer,Athlete + Cheerleader,2 CPS,Stadium,Tim Elbow, Eliza Womanning
+Shepherd,Animal Trainer + Milkmonger,1 CPS,Stable,Bertram Lambert, Beau Peeph
+Winemaker,Farmer + Dreamer,2 CPS,Farm,Sandra Miguel, Bud Wiser
+Baker,Cook + Homemaker,2 CPS,City Square,Brad Levin, Anita Bagel
+Carpenter,Shepherd + Homemaker,2 CPS,City Square,Nelly Todewall, Tim Burr
+Janitor,Plumber + Construction Worker,2 CPS,City Square, Diner, Fast Food,Jan Itor
+Ninja,Martial Artist + Soldier,3 CPS,Ninja HQ, Dojo,Shuri Ken, Kage Arashi
+Referee,Coach + Judge,3 CPS,Stadium, Arena,Lionel Scrimmage, Lyna Scrimmage
+Secret Agent,Ninja + Detective,3 CPS,Ninja HQ,Mike Furry
+Sensei,Martial Artist + Philosopher,3 CPS,Dojo,Miyagi Yojimbo
+Deep Sea Diver,Marine Biologist + Explorer,2 CPS,Tavern, Aquarium,Eileen Dover
+Watchmaker,Historian + Mechanic,3 CPS,City Square,Phillipa Patek, Dick Tocke
+Time Traveller,Watchmaker + Explorer,3 CPS,Tavern,Doctor When
+Tailor,Model + Artist,3 CPS,Weddings R Us, City Square, Fashion Studio,Manny Kinn
+Ringmaster,Animal Trainer + Clown,2 CPS,Circus,Joy Zigfried, Elroy Sigfried
+Oracle,Philosopher + Preacher,2 CPS,Fortune Teller, Astro Church,Krystal Balle
+Matador,Animal Trainer + Wrestler,2 CPS,Circus,Frito Santana
+Magician,Accountant + Accountant,3 CPS,Circus,Larry Houdini
+Bartender,Winemaker + Salesman,3 CPS,Tavern, Bar,Roman Koch
+Barista,Bartender + Waiter,1 CPS,Cafe,Dee Kaffin, Tal Black
+Wizard,Magician + Scientist,2 CPS,School of Magic,Avery Kedavra
+Apprentice,Wizard + Assistant,2 CPS,School of Magic,William Hogworth
+System Admin,Programmer + Programmer,1 CPS,Tech Support,Sydney Burnette
+Genie,Magician + Magician,1 CPS,Tavern,Benjamin Djinn, Desiree Trois
+Wedding Planner,Winemaker + Baker,1 CPS,Weddings R Us,Holly Matrimony
+Centaur,Mutant + Jockey,5 CPS,Altar,Yuni Cornsareal
+
