@@ -19,7 +19,7 @@ class Profession
 		
 		
 	def getExtra
-		return("Is he unlocked? " + @unlocked.to_s + "\n\t Productivity: " + @productivity + "\n\t Workplace: "+ @workplace + "\n\t Has Game Name: " + @gameName) 
+		return("Is he unlocked? => " + @unlocked.to_s + "\n\t Productivity:\t\t " + @productivity + "\n\t Workplace:\t\t "+ @workplace + "\n\t Has Game Name:\t\t" + @gameName) 
 	end
 
 	def has_to_s

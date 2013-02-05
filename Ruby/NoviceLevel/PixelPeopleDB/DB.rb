@@ -20,9 +20,18 @@ class DB
 	def infoOn(name)
 		if @db.has_key?(name)
 			name.upcase!
-			puts @db[name].getName
+			puts "=================== THE " + @db[name].getName + " ====================="
 			comboArray = @db[name].getComboNames
-			puts( @db[comboArray[0]].has_to_s + " + " + @db[comboArray[1]].has_to_s) 
+
+			if @db[comboArray[0]]!=nil and @db[comboArray[1]]!=nil
+				print "Combination:\t"
+				puts( @db[comboArray[0]].has_to_s + " + " + @db[comboArray[1]].has_to_s)
+				puts "\n"
+			else
+				puts "Combination:\t\t NA"
+				puts "\n"
+			end
+
 			puts @db[name].getExtra
 		else
 			puts name+" was not found!"
@@ -70,7 +79,17 @@ class DB
 	def printUnattainedProfessions
 		@db.each{|k,v| puts v.getName if !v.unlocked}
 	end
-	
+
+	# print the professions which you have the resources for
+	def printPossible
+		@db.each{|k,v| 
+			combo = v.getComboNames
+			if combo.size == 2 and @db[combo[0]]!=nil and @db[combo[1]] !=nil
+				puts v.getName if @db[combo[0]].unlocked and @db[combo[1]].unlocked and !v.unlocked
+			end
+		}
+	end
+
 	def find(param)
 		param.upcase!
 		@db.each{|k,v| puts v.getName if (v.getName).start_with?(param)}	

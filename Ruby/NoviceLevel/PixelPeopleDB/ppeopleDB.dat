@@ -1,150 +1,150 @@
-Mayor,N/A,1 CPS,Town Hall,Adam Zappel
-Mechanic,N/A,1 CPS,Arrival Center,Eve Jobs
-Engineer,Mayor + Mechanic,2 CPS,Garage or  Utopium Mine,Cameron Shaft
-Sheriff,Mayor + Mayor,2 CPS,Sheriff's Office,Chuck Walker
-Architect,Mayor + Engineer,1 CPS,Town Hall or  Building Firm,Bill Ding/Renee Saunce
-Landscaper,Assistant + Architect,1 CPS,Nursery,Mary Gould/Toby Airey
-Deputy,Assistant + Sheriff,1 CPS,Sheriff's Office or  Police Station,Justine Case or  Justin Case
-Gardener,Landscaper + Deputy,1 CPS,Greenhouse or  Nursery,Chris Anthemum or  Rose Bush
-Mechanical Engineer,Mechanic + Engineer,1 CPS,Garage or  Construction Yard,Anita Gere/Andy Friese
-Botanist,Farmer + Farmer,1 CPS,Greenhouse,Jasmine Woods
-Park Ranger,Sheriff + Landscaper,1 CPS,Park,Eva Gladys or  Forrest Greening
-Firefighter,Mechanic + Police Officer,1 CPS,Fire Station,Helen Bach or  Paul Slider
-Farmer,Engineer + Gardener,1 CPS,Farm or  Greenhouse or  Farmer's Market,Corona Cobb/Brighton Earley
-Doctor,Engineer + Nurse,1 CPS,Clinic or  Hospital,Sandra Gupta/Gregory Holmes
-Nurse,Homemaker + Gardener,1 CPS,Pharmacy or  Clinic or  Hospital,Leon Downe or  Diana Way
-Police Officer,Sheriff + Sheriff,1 CPS,Bank or  Courthouse or Police Station,Barry Cade/Macy Cannister
-Vet,Park Ranger + Doctor,1 CPS,Animal Shelter,Doug Breeder or  Ruby Schott
-Homemaker,Farmer + Gardener,1 CPS,Farm or  Farmer's Market,Agatha Stewart/Bradley Dunne
-Zoologist,Botanist + Vet,1 CPS,Research Lab or  Animal Shelter or  Aquarium,Reena Soros
-Plumber,Engineer + Assistant,1 CPS,City Square,Peter Piper/Mary Piper
-Fishmonger,Farmer + Plumber,1 CPS,Lakehouse or  Farmer's Market,Brooke Waters
-Animal Trainer,Sheriff + Vet,1 CPS,Animal Shelter,Tom Katz/Kitty Katz
-Milkmonger,Farmer + Animal Trainer,1 CPS,Farmer's Market,Leia Pasteur or  Moose Moore
-Artist,Architect + Dreamer,1 CPS,Arcade or  Gallery,Wendy Warhall
-Photographer,Mechanic + Artist,1 CPS,Photo Shop or  Gallery or  Weddings R Us,Winsta Graham
-Dentist,Doctor + Artist,1 CPS,Dentist's Office,Sirius D'Kaye or  Ginger Whitehouse
-Radiologist,Doctor + Photographer,1 CPS,Hospital or  Dentist's Office,Claire Beams or  Xavier Ray
-Cook,Homemaker + Fishmonger,1 CPS,Diner or  Fast Food,Francesca Furter
-Chef,Artist + Cook,1 CPS,Restaurant,Alla Denta
-Zookeeper,Animal Trainer + Park Ranger,1 CPS,Park,Anna Konda or  Ali Geiter
-Construction Worker,Mechanical Engineer + Deputy,1 CPS,Construction Yard,Jacqueline Hammer or  Jack Hummer
-Car Designer,Mechanical Engineer + Artist,1 CPS,Garage,Alfred Romero or  Astrid Martin
-Athlete,Construction Worker + Farmer,1 CPS,Stadium,Stanley Cupp
-Greengrocer,Farmer + Salesman,1 CPS,Ninja HQ or  Farmer's Market,Hazel Nutt
-Interior Designer,Architect + Artist,1 CPS,Gallery,Ike Iyer or  Shanda Lear
-Olympic Swimmer,Athlete + Fishmonger,1 CPS,Swimming Pool,Brian Thorpe/Michellephelps
-Painter,Artist + Construction Worker,1 CPS,Building Firm or  Construction Yard,Jason Pollack
-Hotel Manager,Homemaker + Salesman,1 CPS,Hotel Utopia,Habo Hilton
-Valet,Car Designer + Hotel Manager,1 CPS,Hotel Utopia,Ella Vader
-Pilot,Valet + Mechanic,1 CPS,Space Port,Perez Schute
-Flight Attendant,Pilot + Waiter,1 CPS,Space Port,Cybil Passner
-Aerospace Engineer,Mechanical Engineer + Pilot,1 CPS,Space Admin or  Observatory,Daniela Bernoulli or  Arthur Burner
-Art Dealer,Artist + Salesman,1 CPS,Gallery,Arthur Major
-Industrialist,Salesman + Salesman,1 CPS,Enterprise,Robin Banks or  Iona Bentley
-Jockey,Animal Trainer + Valet,1 CPS,Stable,Orson Spurs or  Wendy Ryder
-Marine Biologist,Vet + Olympic Swimmer,1 CPS,Aquarium,Tad Pohl
-Real Estate Agent,Architect + Salesman,1 CPS,Building Firm,Lois Price or  Lewis Price
-Soldier,Police Officer + Explorer,1 CPS,Bunker,Private Patty
-Waiter,Cook + Assistant,1 CPS,Restaurant or  Diner,Trey Woscher/Clara Tables
-Philosopher,Dreamer + Dreamer,1 CPS,University,Noah Lotte
-Detective,Police Officer + Philosopher,1 CPS,Police Station or  Law Firm,Mitch Tracey
-Lawyer,Sheriff + Salesman,1 CPS,Courthouse or  Law Firm,Sue Swift or  Alvin Mcbeal
-Marine,Soldier + Olympic Swimmer,2 CPS,Bunker,Joe Howser
-Judge,Lawyer + Sheriff,2 CPS,Courthouse,Judy Schuss or  Gill Tee
-Secretary,Mayor + Deputy,2 CPS,Bank or  Enterprise or  Business Center,Phil Cabinet or  Pepper Werk
-Writer,Secretary + Dreamer,2 CPS,TV Station or  Cafe or  Publishing House,Jorge Martinez
-Poet,Writer + Dreamer,2 CPS,Gallery or  Cafe or  Library,Emmanuel Coloridge or  Olga Frost or  Amelia Bronte
-Paramedic,Police Officer + Doctor,2 CPS,Fire Station,Justin Thyme or  Justina Giffy
-Lifeguard,Olympic Swimmer + Paramedic,2 CPS,Swimming Pool,Angela Anderson
-Model,Photographer + Lifeguard,2 CPS,Photo Shop or  Fashion Studio,Orlando Doom or  Barb E. Dahl
-Swimsuit Model,Model + Olympic Swimmer,2 CPS,Fashion Studio,Abraham Crombie or  Tanya Hide
-Reporter,Detective + Writer,2 CPS,TV Station or  News Agency,Sab Channel
-Ballet Dancer,Athlete + Artist,2 CPS,Dance Studio,Rina Belle or  Dan Saul-Knight
-Martial Artist,Ballet Dancer + Soldier,2 CPS,Dojo,Lucy Lee
-Sushi Chef,Chef + Martial Artist,2 CPS,Sushi Bar,Anni Agi or  Terry Aki
-Food Critic,Cook + Reporter,2 CPS,News Agency,Liv Goode or  Eaton Wright
-General,Marine + Soldier,2 CPS,Bunker,Neve Sarandah
-Actor,Director + Model,2 CPS,Theatre or  Film Studio,Holly Voode or  Bryan Reynolds
-Flight Controller,Architect + Pilot,2 CPS,Space Port,Jett Pastonby
-Calligrapher,Writer + Artist,2 CPS,Gallery,Callie Kravitz or  Otto Graff
-Cameraman,Photographer + Mechanic,2 CPS,Photo Shop or  TV Station,Phil Maker or  Michelle Bay
-Cheerleader,Athlete + Ballet Dancer,2 CPS,Stadium or  Dance Studio,Tom Pomm
-Coach,Athlete + Athlete,2 CPS,Stadium,Jim Laucher
-Courier,Mailman + Salesman,2 CPS,Post Office,Dusty Rhodes
-Director,Cameraman + Cameraman,2 CPS,Theatre or  Film Studio,Martina Scorcese or  Devan Spielburg
-Florist,Farmer + Botanist,2 CPS,Flower Shop or  Nursery or  Farmer's Market,Dan D'Lyons
-Grave Digger,Farmer + Soldier,2 CPS,Funeral Parlor,Doug Pitts
-Mailman,Reporter + Valet,2 CPS,Post Office,June Parcell
-Miner,Grave Digger + Explorer,2 CPS,Utopium Mine,Jem Stoan
-Cattle Rustler,Jockey + Animal Trainer,2 CPS,Stable or  Stadium,Brandon Cattell or  Brenda Cattel
-Postmaster General,Mailman + General,2 CPS,Post Office,Philip Lately
-Stunt Double,Actor + Martial Artist,2 CPS,Film Studio,Oliver Sutton
-Programmer,Mathematician + Engineer,2 CPS,Arcade or  Tech Support,Willa Gates or  Sakura Gates
-Game Designer,Programmer + Artist,2 CPS,Arcade,Brave Marsh
-Mathematician,Philosopher + Scientist,2 CPS,University or  Business Center or  Tech Support,Bertha Russel
-Scientist,Philosopher + Engineer,2 CPS,Research Lab,Milly Graham or  Miller Graham
-Physicist,Scientist + Mathematician,2 CPS,University,Mary Curry or  Wilbert Epstein
-Astronomer,Physicist + Dreamer,2 CPS,Space Admin or  Observatory,Stella Eventide or  Seymour Stars
-Astronaut,Pilot + Astronomer,2 CPS,Space Admin,Neil Livestrong
-Geneticist,Scientist + Doctor,2 CPS,Gene Pool,Gene Poole or  Jean Poole
-Cryptozoologist,Zookeeper + Detective,2 CPS,Research Lab,Holly Mackerel or  Marshall Mellow
-Accountant,Secretary + Mathematician,2 CPS,Pharmacy or  Bank or  Business Center,Pound Fullish or  Zoe Ballanser
-Editor,Writer + Writer,2 CPS,Library or  Publishing House,Jerry Stein
-Librarian,Writer + Poet,2 CPS,Library,Constance Eyelens
-Historian,Philosopher + Librarian,2 CPS,Museum,William Bison or  Anne Teak
-Archaeologist,Historian + Explorer,2 CPS,Museum,Montana Jones
-Super Hero,Soldier + Geneticist,3 CPS,Hero Mansion,Mister Utopia or  Miss Demeanor
-Atomic Hero,Radiologist + General,2 CPS,Hero Mansion,Bruce Brooklyn
-Ancient Hero,Preacher + Weather Reporter,2 CPS,Hero Mansion or  Astro Church,Andromeda Athenos
-Choreographer,Ballet Dancer + Director,2 CPS,Dance Studio,Eshkol Wachmann or  Giselle Ivanov
-Pharmacist,Doctor + Salesman,2 CPS,Pharmacy,Bill D'Spencer or  Molly Kuehl
-CSI,Detective + Photographer,3 CPS,Forensic Lab,Danna Caruso or  Hiroshi Kane
-Forensic Scientist,Detective + Scientist,3 CPS,Forensic Lab,Gotye Prince or  Amanda Katsch
-Physiotherapist,Athlete + Doctor,3 CPS,Spa or  Arena or  Clinic,Ophelia Payne or  Nick Payne
-Coroner,Grave Digger + Doctor,3 CPS,Funeral Parlor,Paula Barer or  Paul Barer
-Anti Hero,Grave Digger + Super Hero,3 CPS,Hero Mansion,Wayne Howlett or  Spectra Garner
-Wrestler,Athlete + Actor,3 CPS,Arena,Candy Savage
-Clown,Comic + Painter,3 CPS,Circus,Josephine King
-Paleontologist,Archeologist + Crytpozoologist,2 CPS,Museum,Tyrone Suarez or  Diana Suarez
-Geologist,Miner + Scientist,3 CPS,Utopium Mine or  Observatory,Sandy Marsh or  Mandy Marsh
-Break Dancer,Ballet Dancer + Rapper,3 CPS,Dance Studio,Deborah Stepper or  Buster Moove
-Captain,Fishmonger + Sheriff,3 CPS,Lakehouse,Claire Waters or  Evan Keel
-Weather Reporter,Reporter + Geologist,3 CPS,News Agency,April Schauer
-Comic,Actor + Poet,3 CPS,Unknown,Hugh Morris
-Disc Jockey,Jockey + Choreographer,3 CPS,Radio Station or  Dance Studio,Miss Skillet or  Mr. Killexx
-First Mate,Captain + Deputy,3 CPS,Lakehouse,Temperance Moore
-Buccaneer,Captain + Explorer,3 CPS,Tavern,Yoho Howe
-Preacher,Philosopher + Dreamer,3 CPS,Astro Church,Ria Carnation or  Ryan Carnation
-Rapper,Poet + Disc Jockey,3 CPS,Dance Studio,Six-T Peso or  Vicky Minja
-Receptionist,Secretary + Model,3 CPS,Enterprise or  Dentist's Office or  Hotel Utopia,Brin Beasely or  Jim Bernard
-Songwriter,Poet + Poet,3 CPS,Radio Station or  Restaurant,Mike Reinhart or  Dee Minor
-Taxidermist,Vet + Coroner,3 CPS,Park,Buck Tester or  Emma Balmer
-Vocalist,Songwriter + Actor,3 CPS,Radio Station or  Bar,Carrie Oakey or  Chip Monk
-Assistant,Mechanic + Mechanic,1 CPS,Town Hall or  Arrival Center,Sheila Blige or  Nestor Cadbury
-Footballer,Athlete + Cheerleader,2 CPS,Stadium,Tim Elbow or  Eliza Womanning
-Shepherd,Animal Trainer + Milkmonger,1 CPS,Stable,Bertram Lambert or  Beau Peeph
-Winemaker,Farmer + Dreamer,2 CPS,Farm,Sandra Miguel or  Bud Wiser
-Baker,Cook + Homemaker,2 CPS,City Square,Brad Levin or  Anita Bagel
-Carpenter,Shepherd + Homemaker,2 CPS,City Square,Nelly Todewall or  Tim Burr
-Janitor,Plumber + Construction Worker,2 CPS,City Square or  Diner or  Fast Food,Jan Itor
-Ninja,Martial Artist + Soldier,3 CPS,Ninja HQ or  Dojo,Shuri Ken or  Kage Arashi
-Referee,Coach + Judge,3 CPS,Stadium or  Arena,Lionel Scrimmage or  Lyna Scrimmage
-Secret Agent,Ninja + Detective,3 CPS,Ninja HQ,Mike Furry
-Sensei,Martial Artist + Philosopher,3 CPS,Dojo,Miyagi Yojimbo
-Deep Sea Diver,Marine Biologist + Explorer,2 CPS,Tavern or  Aquarium,Eileen Dover
-Watchmaker,Historian + Mechanic,3 CPS,City Square,Phillipa Patek or  Dick Tocke
-Time Traveller,Watchmaker + Explorer,3 CPS,Tavern,Doctor When
-Tailor,Model + Artist,3 CPS,Weddings R Us or  City Square or  Fashion Studio,Manny Kinn
-Ringmaster,Animal Trainer + Clown,2 CPS,Circus,Joy Zigfried or  Elroy Sigfried
-Oracle,Philosopher + Preacher,2 CPS,Fortune Teller or  Astro Church,Krystal Balle
-Matador,Animal Trainer + Wrestler,2 CPS,Circus,Frito Santana
-Magician,Accountant + Accountant,3 CPS,Circus,Larry Houdini
-Bartender,Winemaker + Salesman,3 CPS,Tavern or  Bar,Roman Koch
-Barista,Bartender + Waiter,1 CPS,Cafe,Dee Kaffin or  Tal Black
-Wizard,Magician + Scientist,2 CPS,School of Magic,Avery Kedavra
-Apprentice,Wizard + Assistant,2 CPS,School of Magic,William Hogworth
-System Admin,Programmer + Programmer,1 CPS,Tech Support,Sydney Burnette
-Genie,Magician + Magician,1 CPS,Tavern,Benjamin Djinn or  Desiree Trois
-Wedding Planner,Winemaker + Baker,1 CPS,Weddings R Us,Holly Matrimony
-Centaur,Mutant + Jockey,5 CPS,Altar,Yuni Cornsareal
+MAYOR,N/A,1 CPS,TOWN HALL,ADAM ZAPPEL,T
+MECHANIC,N/A,1 CPS,ARRIVAL CENTER,EVE JOBS,T
+ENGINEER,MAYOR + MECHANIC,2 CPS,GARAGE OR  UTOPIUM MINE,CAMERON SHAFT,T
+SHERIFF,MAYOR + MAYOR,2 CPS,SHERIFF'S OFFICE,CHUCK WALKER,T
+ARCHITECT,MAYOR + ENGINEER,1 CPS,TOWN HALL OR  BUILDING FIRM,BILL DING/RENEE SAUNCE,T
+LANDSCAPER,ASSISTANT + ARCHITECT,1 CPS,NURSERY,MARY GOULD/TOBY AIREY,T
+DEPUTY,ASSISTANT + SHERIFF,1 CPS,SHERIFF'S OFFICE OR  POLICE STATION,JUSTINE CASE OR  JUSTIN CASE,T
+GARDENER,LANDSCAPER + DEPUTY,1 CPS,GREENHOUSE OR  NURSERY,CHRIS ANTHEMUM OR  ROSE BUSH,T
+MECHANICAL ENGINEER,MECHANIC + ENGINEER,1 CPS,GARAGE OR  CONSTRUCTION YARD,ANITA GERE/ANDY FRIESE,T
+BOTANIST,FARMER + FARMER,1 CPS,GREENHOUSE,JASMINE WOODS,F
+PARK RANGER,SHERIFF + LANDSCAPER,1 CPS,PARK,EVA GLADYS OR  FORREST GREENING,T
+FIREFIGHTER,MECHANIC + POLICE OFFICER,1 CPS,FIRE STATION,HELEN BACH OR  PAUL SLIDER,T
+FARMER,ENGINEER + GARDENER,1 CPS,FARM OR  GREENHOUSE OR  FARMER'S MARKET,CORONA COBB/BRIGHTON EARLEY,T
+DOCTOR,ENGINEER + NURSE,1 CPS,CLINIC OR  HOSPITAL,SANDRA GUPTA/GREGORY HOLMES,F
+NURSE,HOMEMAKER + GARDENER,1 CPS,PHARMACY OR  CLINIC OR  HOSPITAL,LEON DOWNE OR  DIANA WAY,F
+POLICE OFFICER,SHERIFF + SHERIFF,1 CPS,BANK OR  COURTHOUSE OR POLICE STATION,BARRY CADE/MACY CANNISTER,T
+VET,PARK RANGER + DOCTOR,1 CPS,ANIMAL SHELTER,DOUG BREEDER OR  RUBY SCHOTT,F
+HOMEMAKER,FARMER + GARDENER,1 CPS,FARM OR  FARMER'S MARKET,AGATHA STEWART/BRADLEY DUNNE,F
+ZOOLOGIST,BOTANIST + VET,1 CPS,RESEARCH LAB OR  ANIMAL SHELTER OR  AQUARIUM,REENA SOROS,F
+PLUMBER,ENGINEER + ASSISTANT,1 CPS,CITY SQUARE,PETER PIPER/MARY PIPER,T
+FISHMONGER,FARMER + PLUMBER,1 CPS,LAKEHOUSE OR  FARMER'S MARKET,BROOKE WATERS,F
+ANIMAL TRAINER,SHERIFF + VET,1 CPS,ANIMAL SHELTER,TOM KATZ/KITTY KATZ,F
+MILKMONGER,FARMER + ANIMAL TRAINER,1 CPS,FARMER'S MARKET,LEIA PASTEUR OR  MOOSE MOORE,F
+ARTIST,ARCHITECT + DREAMER,1 CPS,ARCADE OR  GALLERY,WENDY WARHALL,T
+PHOTOGRAPHER,MECHANIC + ARTIST,1 CPS,PHOTO SHOP OR  GALLERY OR  WEDDINGS R US,WINSTA GRAHAM,T
+DENTIST,DOCTOR + ARTIST,1 CPS,DENTIST'S OFFICE,SIRIUS D'KAYE OR  GINGER WHITEHOUSE,F
+RADIOLOGIST,DOCTOR + PHOTOGRAPHER,1 CPS,HOSPITAL OR  DENTIST'S OFFICE,CLAIRE BEAMS OR  XAVIER RAY,F
+COOK,HOMEMAKER + FISHMONGER,1 CPS,DINER OR  FAST FOOD,FRANCESCA FURTER,F
+CHEF,ARTIST + COOK,1 CPS,RESTAURANT,ALLA DENTA,F
+ZOOKEEPER,ANIMAL TRAINER + PARK RANGER,1 CPS,PARK,ANNA KONDA OR  ALI GEITER,F
+CONSTRUCTION WORKER,MECHANICAL ENGINEER + DEPUTY,1 CPS,CONSTRUCTION YARD,JACQUELINE HAMMER OR  JACK HUMMER,F
+CAR DESIGNER,MECHANICAL ENGINEER + ARTIST,1 CPS,GARAGE,ALFRED ROMERO OR  ASTRID MARTIN,T
+ATHLETE,CONSTRUCTION WORKER + FARMER,1 CPS,STADIUM,STANLEY CUPP,F
+GREENGROCER,FARMER + SALESMAN,1 CPS,NINJA HQ OR  FARMER'S MARKET,HAZEL NUTT,F
+INTERIOR DESIGNER,ARCHITECT + ARTIST,1 CPS,GALLERY,IKE IYER OR  SHANDA LEAR,T
+OLYMPIC SWIMMER,ATHLETE + FISHMONGER,1 CPS,SWIMMING POOL,BRIAN THORPE/MICHELLEPHELPS,F
+PAINTER,ARTIST + CONSTRUCTION WORKER,1 CPS,BUILDING FIRM OR  CONSTRUCTION YARD,JASON POLLACK,F
+HOTEL MANAGER,HOMEMAKER + SALESMAN,1 CPS,HOTEL UTOPIA,HABO HILTON,F
+VALET,CAR DESIGNER + HOTEL MANAGER,1 CPS,HOTEL UTOPIA,ELLA VADER,F
+PILOT,VALET + MECHANIC,1 CPS,SPACE PORT,PEREZ SCHUTE,F
+FLIGHT ATTENDANT,PILOT + WAITER,1 CPS,SPACE PORT,CYBIL PASSNER,F
+AEROSPACE ENGINEER,MECHANICAL ENGINEER + PILOT,1 CPS,SPACE ADMIN OR  OBSERVATORY,DANIELA BERNOULLI OR  ARTHUR BURNER,F
+ART DEALER,ARTIST + SALESMAN,1 CPS,GALLERY,ARTHUR MAJOR,F
+INDUSTRIALIST,SALESMAN + SALESMAN,1 CPS,ENTERPRISE,ROBIN BANKS OR  IONA BENTLEY,T
+JOCKEY,ANIMAL TRAINER + VALET,1 CPS,STABLE,ORSON SPURS OR  WENDY RYDER,F
+MARINE BIOLOGIST,VET + OLYMPIC SWIMMER,1 CPS,AQUARIUM,TAD POHL,F
+REAL ESTATE AGENT,ARCHITECT + SALESMAN,1 CPS,BUILDING FIRM,LOIS PRICE OR  LEWIS PRICE,T
+SOLDIER,POLICE OFFICER + EXPLORER,1 CPS,BUNKER,PRIVATE PATTY,F
+WAITER,COOK + ASSISTANT,1 CPS,RESTAURANT OR  DINER,TREY WOSCHER/CLARA TABLES,F
+PHILOSOPHER,DREAMER + DREAMER,1 CPS,UNIVERSITY,NOAH LOTTE,T
+DETECTIVE,POLICE OFFICER + PHILOSOPHER,1 CPS,POLICE STATION OR  LAW FIRM,MITCH TRACEY,T
+LAWYER,SHERIFF + SALESMAN,1 CPS,COURTHOUSE OR  LAW FIRM,SUE SWIFT OR  ALVIN MCBEAL,F
+MARINE,SOLDIER + OLYMPIC SWIMMER,2 CPS,BUNKER,JOE HOWSER,F
+JUDGE,LAWYER + SHERIFF,2 CPS,COURTHOUSE,JUDY SCHUSS OR  GILL TEE,F
+SECRETARY,MAYOR + DEPUTY,2 CPS,BANK OR  ENTERPRISE OR  BUSINESS CENTER,PHIL CABINET OR  PEPPER WERK,T
+WRITER,SECRETARY + DREAMER,2 CPS,TV STATION OR  CAFE OR  PUBLISHING HOUSE,JORGE MARTINEZ,T
+POET,WRITER + DREAMER,2 CPS,GALLERY OR  CAFE OR  LIBRARY,EMMANUEL COLORIDGE OR  OLGA FROST OR  AMELIA BRONTE,T
+PARAMEDIC,POLICE OFFICER + DOCTOR,2 CPS,FIRE STATION,JUSTIN THYME OR  JUSTINA GIFFY,F
+LIFEGUARD,OLYMPIC SWIMMER + PARAMEDIC,2 CPS,SWIMMING POOL,ANGELA ANDERSON,F
+MODEL,PHOTOGRAPHER + LIFEGUARD,2 CPS,PHOTO SHOP OR  FASHION STUDIO,ORLANDO DOOM OR  BARB E. DAHL,F
+SWIMSUIT MODEL,MODEL + OLYMPIC SWIMMER,2 CPS,FASHION STUDIO,ABRAHAM CROMBIE OR  TANYA HIDE,F
+REPORTER,DETECTIVE + WRITER,2 CPS,TV STATION OR  NEWS AGENCY,SAB CHANNEL,T
+BALLET DANCER,ATHLETE + ARTIST,2 CPS,DANCE STUDIO,RINA BELLE OR  DAN SAUL-KNIGHT,F
+MARTIAL ARTIST,BALLET DANCER + SOLDIER,2 CPS,DOJO,LUCY LEE,F
+SUSHI CHEF,CHEF + MARTIAL ARTIST,2 CPS,SUSHI BAR,ANNI AGI OR  TERRY AKI,F
+FOOD CRITIC,COOK + REPORTER,2 CPS,NEWS AGENCY,LIV GOODE OR  EATON WRIGHT,F
+GENERAL,MARINE + SOLDIER,2 CPS,BUNKER,NEVE SARANDAH,F
+ACTOR,DIRECTOR + MODEL,2 CPS,THEATRE OR  FILM STUDIO,HOLLY VOODE OR  BRYAN REYNOLDS,F
+FLIGHT CONTROLLER,ARCHITECT + PILOT,2 CPS,SPACE PORT,JETT PASTONBY,F
+CALLIGRAPHER,WRITER + ARTIST,2 CPS,GALLERY,CALLIE KRAVITZ OR  OTTO GRAFF,T
+CAMERAMAN,PHOTOGRAPHER + MECHANIC,2 CPS,PHOTO SHOP OR  TV STATION,PHIL MAKER OR  MICHELLE BAY,T
+CHEERLEADER,ATHLETE + BALLET DANCER,2 CPS,STADIUM OR  DANCE STUDIO,TOM POMM,F
+COACH,ATHLETE + ATHLETE,2 CPS,STADIUM,JIM LAUCHER,F
+COURIER,MAILMAN + SALESMAN,2 CPS,POST OFFICE,DUSTY RHODES,F
+DIRECTOR,CAMERAMAN + CAMERAMAN,2 CPS,THEATRE OR  FILM STUDIO,MARTINA SCORCESE OR  DEVAN SPIELBURG,F
+FLORIST,FARMER + BOTANIST,2 CPS,FLOWER SHOP OR  NURSERY OR  FARMER'S MARKET,DAN D'LYONS,F
+GRAVE DIGGER,FARMER + SOLDIER,2 CPS,FUNERAL PARLOR,DOUG PITTS,F
+MAILMAN,REPORTER + VALET,2 CPS,POST OFFICE,JUNE PARCELL,F
+MINER,GRAVE DIGGER + EXPLORER,2 CPS,UTOPIUM MINE,JEM STOAN,F
+CATTLE RUSTLER,JOCKEY + ANIMAL TRAINER,2 CPS,STABLE OR  STADIUM,BRANDON CATTELL OR  BRENDA CATTEL,F
+POSTMASTER GENERAL,MAILMAN + GENERAL,2 CPS,POST OFFICE,PHILIP LATELY,F
+STUNT DOUBLE,ACTOR + MARTIAL ARTIST,2 CPS,FILM STUDIO,OLIVER SUTTON,F
+PROGRAMMER,MATHEMATICIAN + ENGINEER,2 CPS,ARCADE OR  TECH SUPPORT,WILLA GATES OR  SAKURA GATES,T
+GAME DESIGNER,PROGRAMMER + ARTIST,2 CPS,ARCADE,BRAVE MARSH,T
+MATHEMATICIAN,PHILOSOPHER + SCIENTIST,2 CPS,UNIVERSITY OR  BUSINESS CENTER OR  TECH SUPPORT,BERTHA RUSSEL,T
+SCIENTIST,PHILOSOPHER + ENGINEER,2 CPS,RESEARCH LAB,MILLY GRAHAM OR  MILLER GRAHAM,T
+PHYSICIST,SCIENTIST + MATHEMATICIAN,2 CPS,UNIVERSITY,MARY CURRY OR  WILBERT EPSTEIN,T
+ASTRONOMER,PHYSICIST + DREAMER,2 CPS,SPACE ADMIN OR  OBSERVATORY,STELLA EVENTIDE OR  SEYMOUR STARS,T
+ASTRONAUT,PILOT + ASTRONOMER,2 CPS,SPACE ADMIN,NEIL LIVESTRONG,F
+GENETICIST,SCIENTIST + DOCTOR,2 CPS,GENE POOL,GENE POOLE OR  JEAN POOLE,F
+CRYPTOZOOLOGIST,ZOOKEEPER + DETECTIVE,2 CPS,RESEARCH LAB,HOLLY MACKEREL OR  MARSHALL MELLOW,F
+ACCOUNTANT,SECRETARY + MATHEMATICIAN,2 CPS,PHARMACY OR  BANK OR  BUSINESS CENTER,POUND FULLISH OR  ZOE BALLANSER,T
+EDITOR,WRITER + WRITER,2 CPS,LIBRARY OR  PUBLISHING HOUSE,JERRY STEIN,F
+LIBRARIAN,WRITER + POET,2 CPS,LIBRARY,CONSTANCE EYELENS,T
+HISTORIAN,PHILOSOPHER + LIBRARIAN,2 CPS,MUSEUM,WILLIAM BISON OR  ANNE TEAK,T
+ARCHAEOLOGIST,HISTORIAN + EXPLORER,2 CPS,MUSEUM,MONTANA JONES,F
+SUPER HERO,SOLDIER + GENETICIST,3 CPS,HERO MANSION,MISTER UTOPIA OR  MISS DEMEANOR,F
+ATOMIC HERO,RADIOLOGIST + GENERAL,2 CPS,HERO MANSION,BRUCE BROOKLYN,F
+ANCIENT HERO,PREACHER + WEATHER REPORTER,2 CPS,HERO MANSION OR  ASTRO CHURCH,ANDROMEDA ATHENOS,F
+CHOREOGRAPHER,BALLET DANCER + DIRECTOR,2 CPS,DANCE STUDIO,ESHKOL WACHMANN OR  GISELLE IVANOV,F
+PHARMACIST,DOCTOR + SALESMAN,2 CPS,PHARMACY,BILL D'SPENCER OR  MOLLY KUEHL,F
+CSI,DETECTIVE + PHOTOGRAPHER,3 CPS,FORENSIC LAB,DANNA CARUSO OR  HIROSHI KANE,T
+FORENSIC SCIENTIST,DETECTIVE + SCIENTIST,3 CPS,FORENSIC LAB,GOTYE PRINCE OR  AMANDA KATSCH,T
+PHYSIOTHERAPIST,ATHLETE + DOCTOR,3 CPS,SPA OR  ARENA OR  CLINIC,OPHELIA PAYNE OR  NICK PAYNE,F
+CORONER,GRAVE DIGGER + DOCTOR,3 CPS,FUNERAL PARLOR,PAULA BARER OR  PAUL BARER,F
+ANTI HERO,GRAVE DIGGER + SUPER HERO,3 CPS,HERO MANSION,WAYNE HOWLETT OR  SPECTRA GARNER,F
+WRESTLER,ATHLETE + ACTOR,3 CPS,ARENA,CANDY SAVAGE,F
+CLOWN,COMIC + PAINTER,3 CPS,CIRCUS,JOSEPHINE KING,F
+PALEONTOLOGIST,ARCHEOLOGIST + CRYTPOZOOLOGIST,2 CPS,MUSEUM,TYRONE SUAREZ OR  DIANA SUAREZ,F
+GEOLOGIST,MINER + SCIENTIST,3 CPS,UTOPIUM MINE OR  OBSERVATORY,SANDY MARSH OR  MANDY MARSH,F
+BREAK DANCER,BALLET DANCER + RAPPER,3 CPS,DANCE STUDIO,DEBORAH STEPPER OR  BUSTER MOOVE,F
+CAPTAIN,FISHMONGER + SHERIFF,3 CPS,LAKEHOUSE,CLAIRE WATERS OR  EVAN KEEL,F
+WEATHER REPORTER,REPORTER + GEOLOGIST,3 CPS,NEWS AGENCY,APRIL SCHAUER,F
+COMIC,ACTOR + POET,3 CPS,UNKNOWN,HUGH MORRIS,F
+DISC JOCKEY,JOCKEY + CHOREOGRAPHER,3 CPS,RADIO STATION OR  DANCE STUDIO,MISS SKILLET OR  MR. KILLEXX,F
+FIRST MATE,CAPTAIN + DEPUTY,3 CPS,LAKEHOUSE,TEMPERANCE MOORE,F
+BUCCANEER,CAPTAIN + EXPLORER,3 CPS,TAVERN,YOHO HOWE,F
+PREACHER,PHILOSOPHER + DREAMER,3 CPS,ASTRO CHURCH,RIA CARNATION OR  RYAN CARNATION,T
+RAPPER,POET + DISC JOCKEY,3 CPS,DANCE STUDIO,SIX-T PESO OR  VICKY MINJA,F
+RECEPTIONIST,SECRETARY + MODEL,3 CPS,ENTERPRISE OR  DENTIST'S OFFICE OR  HOTEL UTOPIA,BRIN BEASELY OR  JIM BERNARD,F
+SONGWRITER,POET + POET,3 CPS,RADIO STATION OR  RESTAURANT,MIKE REINHART OR  DEE MINOR,T
+TAXIDERMIST,VET + CORONER,3 CPS,PARK,BUCK TESTER OR  EMMA BALMER,F
+VOCALIST,SONGWRITER + ACTOR,3 CPS,RADIO STATION OR  BAR,CARRIE OAKEY OR  CHIP MONK,F
+ASSISTANT,MECHANIC + MECHANIC,1 CPS,TOWN HALL OR  ARRIVAL CENTER,SHEILA BLIGE OR  NESTOR CADBURY,T
+FOOTBALLER,ATHLETE + CHEERLEADER,2 CPS,STADIUM,TIM ELBOW OR  ELIZA WOMANNING,F
+SHEPHERD,ANIMAL TRAINER + MILKMONGER,1 CPS,STABLE,BERTRAM LAMBERT OR  BEAU PEEPH,F
+WINEMAKER,FARMER + DREAMER,2 CPS,FARM,SANDRA MIGUEL OR  BUD WISER,T
+BAKER,COOK + HOMEMAKER,2 CPS,CITY SQUARE,BRAD LEVIN OR  ANITA BAGEL,F
+CARPENTER,SHEPHERD + HOMEMAKER,2 CPS,CITY SQUARE,NELLY TODEWALL OR  TIM BURR,F
+JANITOR,PLUMBER + CONSTRUCTION WORKER,2 CPS,CITY SQUARE OR  DINER OR  FAST FOOD,JAN ITOR,F
+NINJA,MARTIAL ARTIST + SOLDIER,3 CPS,NINJA HQ OR  DOJO,SHURI KEN OR  KAGE ARASHI,F
+REFEREE,COACH + JUDGE,3 CPS,STADIUM OR  ARENA,LIONEL SCRIMMAGE OR  LYNA SCRIMMAGE,F
+SECRET AGENT,NINJA + DETECTIVE,3 CPS,NINJA HQ,MIKE FURRY,F
+SENSEI,MARTIAL ARTIST + PHILOSOPHER,3 CPS,DOJO,MIYAGI YOJIMBO,F
+DEEP SEA DIVER,MARINE BIOLOGIST + EXPLORER,2 CPS,TAVERN OR  AQUARIUM,EILEEN DOVER,F
+WATCHMAKER,HISTORIAN + MECHANIC,3 CPS,CITY SQUARE,PHILLIPA PATEK OR  DICK TOCKE,T
+TIME TRAVELLER,WATCHMAKER + EXPLORER,3 CPS,TAVERN,DOCTOR WHEN,F
+TAILOR,MODEL + ARTIST,3 CPS,WEDDINGS R US OR  CITY SQUARE OR  FASHION STUDIO,MANNY KINN,F
+RINGMASTER,ANIMAL TRAINER + CLOWN,2 CPS,CIRCUS,JOY ZIGFRIED OR  ELROY SIGFRIED,F
+ORACLE,PHILOSOPHER + PREACHER,2 CPS,FORTUNE TELLER OR  ASTRO CHURCH,KRYSTAL BALLE,F
+MATADOR,ANIMAL TRAINER + WRESTLER,2 CPS,CIRCUS,FRITO SANTANA,F
+MAGICIAN,ACCOUNTANT + ACCOUNTANT,3 CPS,CIRCUS,LARRY HOUDINI,T
+BARTENDER,WINEMAKER + SALESMAN,3 CPS,TAVERN OR  BAR,ROMAN KOCH,F
+BARISTA,BARTENDER + WAITER,1 CPS,CAFE,DEE KAFFIN OR  TAL BLACK,F
+WIZARD,MAGICIAN + SCIENTIST,2 CPS,SCHOOL OF MAGIC,AVERY KEDAVRA,F
+APPRENTICE,WIZARD + ASSISTANT,2 CPS,SCHOOL OF MAGIC,WILLIAM HOGWORTH,F
+SYSTEM ADMIN,PROGRAMMER + PROGRAMMER,1 CPS,TECH SUPPORT,SYDNEY BURNETTE,T
+GENIE,MAGICIAN + MAGICIAN,1 CPS,TAVERN,BENJAMIN DJINN OR  DESIREE TROIS,F
+WEDDING PLANNER,WINEMAKER + BAKER,1 CPS,WEDDINGS R US,HOLLY MATRIMONY,F
+CENTAUR,MUTANT + JOCKEY,5 CPS,ALTAR,YUNI CORNSAREAL,F

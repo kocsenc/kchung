@@ -65,11 +65,14 @@ def main()
 			param.upcase!
 			db.find(param)
 
-		when "show unlocked"
+		when "print unlocked"
 			db.printAttainedProfessions
 
-		when "show locked"
+		when "print locked"
 			db.printUnattainedProfessions
+
+		when "print possible"
+			db.printPossible
 
 		when "help","h" #offer help
 			sysout("******************** HELP PAGE ********************")
@@ -77,9 +80,10 @@ def main()
 			sysout("|   info [NAME]      | Get information about NAME |")
 			sysout("|   have [NAME]      | Will show you if you have  |")
 			sysout("|                    | that profession            |")
-			sysout("|   show unlocked    | Will show unlocked         |")
+			sysout("|   print unlocked   | Will show unlocked         |")
 			sysout("|                    | 	professions               |")
-			sysout("|   show locked      | Show locked professions    |")
+			sysout("|   print locked     | Show locked professions    |")
+			sysout("|  print possible    |  Show what you can make    |")
 			sysout("|  find [NAME]       | to find if profession exist|")
 			sysout("| lock/unlock [NAME] | tell program to lock/unlock|")
 			sysout("| ")

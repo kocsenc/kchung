@@ -11,7 +11,7 @@ def parse()
 		db = DB.new()
 		count = 1
 		CSV.foreach("./ppeopleDB.dat") do |line|
-			# Profession, combo, productivity, structure, gameName, has?
+			# name,combo,productivity,workplace,gameName,unlocked
 			line.each{|x| x.upcase! }#if x.is_a?String}
 			puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
 			count += 1
@@ -36,7 +36,7 @@ end #end method
 def save(db)
 	begin
 		pplArray = db.getArray()
-		CSV.open("./ppeopleDB.dat", wb) do |csv|
+		CSV.open("./ppeopleDB.dat", "wb") do |csv|
 			pplArray.each { |person|
 				ar = Array.new
 				has = "T" if person.unlocked
