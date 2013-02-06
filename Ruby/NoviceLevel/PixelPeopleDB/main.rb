@@ -17,7 +17,7 @@ def main()
 	db = parse()
 	sysout("Loaded Database")
 
-	puts("Welcome to the Pixel People Helper Program v0.1")
+	puts("Welcome to the Pixel People Helper Program v1.1")
 	puts(" For help type in 'help' or 'h' ")
 	edit = false
 	while true do
