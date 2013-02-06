@@ -8,6 +8,7 @@ class DB
 
 	def initialize()
 		@db = Hash.new()
+		@queue = Array.new()
 	end
 
 	# Adds a profession object to the hash
@@ -28,7 +29,7 @@ class DB
 				puts( @db[comboArray[0]].has_to_s + " + " + @db[comboArray[1]].has_to_s)
 				puts "\n"
 			else
-				puts "Combination:\t\t NA or Special Profession"
+				puts "Combination:\t\t NA or Requires special Profession"
 				puts "\n"
 			end
 
@@ -94,6 +95,30 @@ class DB
 		param.upcase!
 		@db.each{|k,v| puts v.getName if (v.getName).start_with?(param)}	
 	end	
+
+	def addQueue(name)
+		name.upcase!
+		if @db.has_key?(name)
+			@queue.push(@db[name])
+			@queue.uniq!
+		else
+			puts name+ " was not found as a Profession!"
+		end
+	end
+
+	def printQueue()
+		puts @queue.inspect
+	end
+
+	def removeQueue(name)
+		name.upcase!
+		if @queue.has?(@db[name])
+			@queue.delete(@db[name])
+			@queue.uniq!
+		else
+			puts name + " was not in queue!"
+		end
+	end
 
 
 	def getArray()

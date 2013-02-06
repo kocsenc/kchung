@@ -13,7 +13,7 @@ def parse()
 		CSV.foreach("./ppeopleDB.dat") do |line|
 			# name,combo,productivity,workplace,gameName,unlocked
 			line.each{|x| x.upcase! }#if x.is_a?String}
-			puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
+			#DEBUG: puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
 			count += 1
 			if line.size == 5
 				db.add(line[0],line[1],line[2],line[3],line[4],false)
