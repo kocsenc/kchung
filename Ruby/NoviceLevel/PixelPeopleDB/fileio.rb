@@ -30,6 +30,22 @@ def parse()
 	rescue
 		abort("RESCUE: Critical Error parsing the DataBase")
 	end #end try/catch
+=begin
+	begin
+		CSV.foreach("./queue.dat") do |line|
+			line.each{|x| x.upcase! }
+
+
+
+
+
+
+		end#end CSV foreach
+	rescue
+
+	end #end try/catch 2
+=end
+
 end #end method
 
 

@@ -110,6 +110,10 @@ class DB
 		puts @queue.inspect
 	end
 
+	def getQueue()
+		return @queue
+	end
+
 	def removeQueue(name)
 		name.upcase!
 		if @queue.has?(@db[name])
