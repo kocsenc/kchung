@@ -58,13 +58,13 @@ def main()
 			param.upcase!
 			db.find(param)
 
-		when /queue\s+/
+		when /^queue\s+/
 			param = input.gsub(/queue\s+/,"")
 			param.upcase!
 			db.addQueue(param)
 			edit = true
 
-		when /dequeue\s+/
+		when /^dequeue\s+/
 			param = input.gsub(/dequeue\s+/,"")
 			param.upcase!
 			db.removeQueue(param)

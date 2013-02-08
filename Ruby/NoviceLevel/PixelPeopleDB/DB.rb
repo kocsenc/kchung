@@ -112,7 +112,10 @@ class DB
 	end
 
 	def printQueue()
-		@queue.each { |x| puts x.getName + ", " }
+		if @queue.empty?
+			return puts "Queue is empty"
+		end
+		@queue.each { |x| puts x.getName  }
 	end
 
 	def getQueueIO()
@@ -123,11 +126,11 @@ class DB
 
 	def removeQueue(name)
 		name.upcase!
-		if @queue.has?(@db[name])
+		if @queue.include?(@db[name])
 			@queue.delete(@db[name])
 			@queue.uniq!
 		else
-			puts name + " was not in queue!"
+			puts name + " was not in queue or is empty!"
 		end
 	end
 
