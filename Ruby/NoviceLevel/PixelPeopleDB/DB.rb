@@ -63,8 +63,13 @@ class DB
 	def unlock(name)
 		name.upcase!
 		if @db.has_key?(name)
-			@db[name].unlocked = true
-			puts name+ " was unlocked!"
+			combo = @db[name].getComboNames
+			if combo.size == 2 and @db[combo[0]].unlocked and @db[combo[1]].unlocked
+				@db[name].unlocked = true
+				puts name+ " was unlocked!"
+			else
+				puts "The professions required for this profession are not unlocked yet!"
+			end
 		else
 			puts name+ " was not found!"
 		end

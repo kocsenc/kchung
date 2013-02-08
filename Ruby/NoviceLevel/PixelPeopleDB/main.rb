@@ -43,13 +43,6 @@ def main()
 			db.lock(param)
 			edit = true
 
-		when "save"	
-			if edit
-				save(db)
-			else
-				sysout("No changes were made, cant save")
-			end
-
 		when /info\s+/
 			param = input.gsub(/info\s+/,"")
 			param.upcase!
@@ -64,6 +57,29 @@ def main()
 			param = input.gsub(/find\s+/,"")
 			param.upcase!
 			db.find(param)
+
+		when /queue\s+/
+			param = input.gsub(/queue\s+/,"")
+			param.upcase!
+			db.addQueue(param)
+			edit = true
+
+		when /dequeue\s+/
+			param = input.gsub(/dequeue\s+/,"")
+			param.upcase!
+			db.removeQueue(param)
+			edit = true
+
+		when "print queue"
+			db.printQueue
+
+		when "save"	
+			if edit
+				save(db)
+			else
+				sysout("No changes were made, cant save")
+			end
+			edit = false
 
 		when "print unlocked"
 			db.printAttainedProfessions

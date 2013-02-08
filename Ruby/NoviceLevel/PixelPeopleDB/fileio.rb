@@ -30,21 +30,22 @@ def parse()
 	rescue
 		abort("RESCUE: Critical Error parsing the DataBase")
 	end #end try/catch
-=begin
+
+
 	begin
 		CSV.foreach("./queue.dat") do |line|
 			line.each{|x| x.upcase! }
-
-
-
-
-
+			#Debug:
+			puts "Queue is: "+ line.to_s
+			line.each{|x| db.addQueue(x) }
 
 		end#end CSV foreach
 	rescue
-
+		abort("RESCUE: Critical Error parsing the queueFile")
 	end #end try/catch 2
-=end
+
+
+
 
 end #end method
 
@@ -63,8 +64,22 @@ def save(db)
 
 
 		end #end csv
+	rescue
+		abort("Rescue:Critical Error Saving DataBAse")
 
-	end #end try catch
+	end#end try catch 1
 
+
+	begin
+		CSV.open("./queue.dat" , "wb") do |csv|
+			queueArray = db.getQueue
+			saveArray = Array.new
+			queueArray.each{ |x| saveArray.push(x.getName.to_s) }
+			csv << saveArray
+		end
+
+	rescue
+		abort("RESCUE: Critical Error Saving queue")
+	end #end try catch 2
 end #end save method
 
