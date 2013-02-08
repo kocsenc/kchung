@@ -112,11 +112,13 @@ class DB
 	end
 
 	def printQueue()
-		puts @queue.inspect
+		@queue.each { |x| puts x.getName + ", " }
 	end
 
-	def getQueue()
-		return @queue
+	def getQueueIO()
+		returnAry = Array.new
+		@queue.each{ |x| returnAry.push((x.getName).to_s)  }
+		return returnAry
 	end
 
 	def removeQueue(name)

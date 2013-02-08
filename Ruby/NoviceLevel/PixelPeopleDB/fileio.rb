@@ -26,7 +26,6 @@ def parse()
 			end
 
 		end # CSV foreach end
-		return db
 	rescue
 		abort("RESCUE: Critical Error parsing the DataBase")
 	end #end try/catch
@@ -36,7 +35,6 @@ def parse()
 		CSV.foreach("./queue.dat") do |line|
 			line.each{|x| x.upcase! }
 			#Debug:
-			puts "Queue is: "+ line.to_s
 			line.each{|x| db.addQueue(x) }
 
 		end#end CSV foreach
@@ -46,6 +44,7 @@ def parse()
 
 
 
+		return db
 
 end #end method
 
@@ -72,9 +71,9 @@ def save(db)
 
 	begin
 		CSV.open("./queue.dat" , "wb") do |csv|
-			queueArray = db.getQueue
+			queueArray = db.getQueueIO
 			saveArray = Array.new
-			queueArray.each{ |x| saveArray.push(x.getName.to_s) }
+			queueArray.each{|x| saveArray.push(x)}
 			csv << saveArray
 		end
 
