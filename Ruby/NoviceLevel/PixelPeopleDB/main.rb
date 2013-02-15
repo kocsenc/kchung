@@ -70,6 +70,12 @@ def main()
 			db.removeQueue(param)
 			edit = true
 
+		when /^canmake\s+/
+			param = input.gsub(/canmake\s+/,"")
+			param.upcase
+			db.canMake(param)
+			edit = true		
+
 		when "print queue"
 			db.printQueue
 

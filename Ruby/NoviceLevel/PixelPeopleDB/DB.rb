@@ -6,6 +6,8 @@ require './Profession'
 
 class DB
 
+	# Hash where key is name and value is the object of the profession (see
+	# Profession.rb
 	def initialize()
 		@db = Hash.new()
 		@queue = Array.new()
@@ -93,6 +95,17 @@ class DB
 			if combo.size == 2 and @db[combo[0]]!=nil and @db[combo[1]] !=nil
 				puts v.getName if @db[combo[0]].unlocked and @db[combo[1]].unlocked and !v.unlocked
 			end
+		}
+	end
+
+	def canMake(name)
+		name.upcase!
+		@db.each{ |k,v|
+			(v.getComboNames).each{ |combo|
+				if combo == name
+					puts k.to_s
+				end
+			}
 		}
 	end
 
