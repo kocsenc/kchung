@@ -17,7 +17,7 @@ def main()
 	db = parse()
 	sysout("Loaded Database")
 
-	puts("Welcome to the Pixel People Helper Program v1.1")
+	puts("Welcome to the Pixel People Helper Program v1.5")
 	puts(" For help type in 'help' or 'h' ")
 	edit = false
 	while true do
@@ -102,6 +102,8 @@ def main()
 			sysout("|   info [NAME]      | Get information about NAME |")
 			sysout("|   have [NAME]      | Will show you if you have  |")
 			sysout("|                    | that profession            |")
+			sysout("|  canmake [NAME]    | what can profession make?  |")
+			sysout("| queue/dequeue name | A convenience queue to use |") 
 			sysout("|   print unlocked   | Will show unlocked         |")
 			sysout("|                    | 	professions               |")
 			sysout("|   print locked     | Show locked professions    |")
