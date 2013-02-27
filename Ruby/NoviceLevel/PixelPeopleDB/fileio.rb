@@ -10,7 +10,7 @@ def parse()
 	begin
 		db = DB.new()
 		count = 1
-		CSV.foreach("./ppeopleDB.dat") do |line|
+		CSV.foreach("./ppeopleDB.csv") do |line|
 			# name,combo,productivity,workplace,gameName,unlocked
 			line.each{|x| x.upcase! }#if x.is_a?String}
 			#DEBUG: puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
