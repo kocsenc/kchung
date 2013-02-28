@@ -79,6 +79,9 @@ def main()
 		when "print queue"
 			db.printQueue
 
+		when "clear queue"
+			db.clearQueue
+
 		when "save"	
 			if edit
 				save(db)

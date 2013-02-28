@@ -128,6 +128,17 @@ class DB
 		end
 	end
 
+	def removeQueue(name)
+		name.upcase!
+		if @queue.include?(@db[name])
+			@queue.delete(@db[name])
+			@queue.uniq!
+		else
+			puts name + " was not in queue or is empty!"
+		end
+	end
+
+
 	def printQueue()
 		if @queue.empty?
 			return puts "Queue is empty"
@@ -141,21 +152,15 @@ class DB
 		return returnAry
 	end
 
-	def removeQueue(name)
-		name.upcase!
-		if @queue.include?(@db[name])
-			@queue.delete(@db[name])
-			@queue.uniq!
-		else
-			puts name + " was not in queue or is empty!"
-		end
-	end
-
-
 	def getArray()
 		ar = Array.new
 		@db.each { |k,v| ar.push(v)	}
 		return ar
+	end
+
+	def clearQueue()
+		@queue.clear
+		puts "The Queue has been cleared"
 	end
 
 end #Class end
