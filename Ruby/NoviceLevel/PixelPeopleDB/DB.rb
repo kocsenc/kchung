@@ -90,12 +90,16 @@ class DB
 
 	# print the professions which you have the resources for
 	def printPossible
+		ary = Array.new
 		@db.each{|k,v| 
 			combo = v.getComboNames
 			if combo.size == 2 and @db[combo[0]]!=nil and @db[combo[1]] !=nil
-				puts v.getName if @db[combo[0]].unlocked and @db[combo[1]].unlocked and !v.unlocked
+				ary.push(v.getName) if @db[combo[0]].unlocked and @db[combo[1]].unlocked and !v.unlocked
 			end
 		}
+
+		ary.sort!
+		ary.each { |x| puts x}
 	end
 
 	def canMake(name)
