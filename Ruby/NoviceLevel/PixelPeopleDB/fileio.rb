@@ -52,7 +52,7 @@ end #end method
 def save(db)
 	begin
 		pplArray = db.getArray()
-		CSV.open("./ppeopleDB.dat", "wb") do |csv|
+		CSV.open("./ppeopleDB.csv", "wb") do |csv|
 			pplArray.each { |person|
 				ar = Array.new
 				has = "T" if person.unlocked
