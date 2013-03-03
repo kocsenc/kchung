@@ -12,7 +12,6 @@ def parse()
 	begin
 		db = DB.new()
 		count = 1
-		puts fileNameDB
 		CSV.foreach(fileNameDB) do |line|
 			# name,combo,productivity,workplace,gameName,unlocked
 			line.each{|x| x.upcase! }#if x.is_a?String}
