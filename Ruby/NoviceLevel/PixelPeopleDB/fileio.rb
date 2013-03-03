@@ -5,12 +5,13 @@
 
 require 'csv'
 require './DB'
-
+fileNameDB = "./ppeopleDB.csv"
+queueFileName = "./queue.dat"
 def parse()
 	begin
 		db = DB.new()
 		count = 1
-		CSV.foreach("./ppeopleDB.csv") do |line|
+		CSV.foreach(fileNameDB) do |line|
 			# name,combo,productivity,workplace,gameName,unlocked
 			line.each{|x| x.upcase! }#if x.is_a?String}
 			#DEBUG: puts "Size is: " + line.size.to_s + " Line number: " + count.to_s
@@ -32,7 +33,7 @@ def parse()
 
 
 	begin
-		CSV.foreach("./queue.dat") do |line|
+		CSV.foreach(queueFileName) do |line|
 			line.each{|x| x.upcase! }
 			#Debug:
 			line.each{|x| db.addQueue(x) }
@@ -52,7 +53,7 @@ end #end method
 def save(db)
 	begin
 		pplArray = db.getArray()
-		CSV.open("./ppeopleDB.csv", "wb") do |csv|
+		CSV.open(fileNameDB, "wb") do |csv|
 			pplArray.each { |person|
 				ar = Array.new
 				has = "T" if person.unlocked
@@ -70,7 +71,7 @@ def save(db)
 
 
 	begin
-		CSV.open("./queue.dat" , "wb") do |csv|
+		CSV.open(queueFileName , "wb") do |csv|
 			queueArray = db.getQueueIO
 			saveArray = Array.new
 			queueArray.each{|x| saveArray.push(x)}
