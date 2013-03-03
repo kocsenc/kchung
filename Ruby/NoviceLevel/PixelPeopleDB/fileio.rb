@@ -5,12 +5,14 @@
 
 require 'csv'
 require './DB'
-fileNameDB = "./ppeopleDB.csv"
-queueFileName = "./queue.dat"
+
 def parse()
+	fileNameDB = "./ppeopleDB.csv"
+	queueFileName = "./queue.dat"
 	begin
 		db = DB.new()
 		count = 1
+		puts fileNameDB
 		CSV.foreach(fileNameDB) do |line|
 			# name,combo,productivity,workplace,gameName,unlocked
 			line.each{|x| x.upcase! }#if x.is_a?String}
@@ -51,6 +53,8 @@ end #end method
 
 
 def save(db)
+	fileNameDB = "./ppeopleDB.csv"
+	queueFileName = "./queue.dat"
 	begin
 		pplArray = db.getArray()
 		CSV.open(fileNameDB, "wb") do |csv|
