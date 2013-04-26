@@ -1,0 +1,57 @@
+[WARNING] Command line option -npr is deprecated and will be removed in future Maven versions.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building TeamTwoHTMLEditor 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ TeamTwoHTMLEditor ---
+[INFO] Deleting C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ TeamTwoHTMLEditor ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 37 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ TeamTwoHTMLEditor ---
+[INFO] Compiling 46 source files to C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ TeamTwoHTMLEditor ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ TeamTwoHTMLEditor ---
+[INFO] Compiling 1 source file to C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ TeamTwoHTMLEditor ---
+[INFO] Surefire report directory: C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TeamTwoHTMLEditor.HTMLFileTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-gitlog-plugin:1.5.0:generate (default) @ TeamTwoHTMLEditor ---
+[INFO] Generating changelog in C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target with title Changelog for IntelliHTML -- Unit 2
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ TeamTwoHTMLEditor ---
+[INFO] Building jar: C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\HTMLEditor.jar
+[WARNING] Configuration options: 'appendAssemblyId' is set to false, and 'classifier' is missing.
+Instead of attaching the assembly file: C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\HTMLEditor.jar, it will become the file for main project artifact.
+NOTE: If multiple descriptors or descriptor-formats are provided for this project, the value of this file will be non-deterministic!
+[WARNING] Replacing pre-existing project main-artifact file: C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\classes
+with assembly file: C:\Users\Kocsen\Documents\IntelliJWorkspace\TeamTwoHTMLEditor\target\HTMLEditor.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.532s
+[INFO] Finished at: Thu Apr 18 12:31:19 EDT 2013
+[INFO] Final Memory: 12M/28M
+[INFO] ------------------------------------------------------------------------
