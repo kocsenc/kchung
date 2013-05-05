@@ -12,7 +12,7 @@ require './GUI.rb'
 
 
 def main()
-	GUI.new
+	#GUI.new
 	sysout("Booting System")
 
 	sysout("Loading Database...")

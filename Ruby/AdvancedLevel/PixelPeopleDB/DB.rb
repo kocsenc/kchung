@@ -83,6 +83,12 @@ class DB
 		@db.each{|k,v| puts v.getName if v.unlocked}
 	end
 
+	def getAttainedProfessions
+		ary = Array.new
+		@db.each{|k,v| ary.push(v.getName) if v.unlocked}
+		return ary
+	end
+
 	# print locked professions
 	def printUnattainedProfessions
 		@db.each{|k,v| puts v.getName if !v.unlocked}
@@ -90,6 +96,12 @@ class DB
 
 	# print the professions which you have the resources for
 	def printPossible
+		ary = getPossible
+		ary.each { |x| puts x}
+	end
+
+
+	def getPossible
 		ary = Array.new
 		@db.each{|k,v| 
 			combo = v.getComboNames
@@ -99,8 +111,9 @@ class DB
 		}
 
 		ary.sort!
-		ary.each { |x| puts x}
+		return ary
 	end
+
 
 	def canMake(name)
 		name.upcase!
