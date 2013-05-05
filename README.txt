@@ -18,6 +18,8 @@ Index:
 			~DietManager - Fully functional Diet manager that has control of 
 							foods and calories and the respective database.
 							Similarly, user can log foods eaten for a given date
+			~PixelPeopleDB - an application designed to go alongside the Pixel People iOS game to
+							track unlocks and provide cool tools.
 					 
 	C:
 		Novice:
@@ -30,4 +32,12 @@ Index:
 			~Huffman - Program that will find huffman codes using Trees and pointers
 			~practicum2 - Timed practicum (100m) to implement a dequeue using pointers
 			~Sudoku - Implementation of Sudoku game (no pointers)
+	Java:
+		~HTML Editor - a Swing implementation of a simple HTML editor. Uses design patterns and comes
+						along with an extensive design document.
+						Has features that are quite unique, I loved that project.
+		~Pizza Delivery System - Year 1 project for simluating a pizza store and its sale delivery and 
+						many similar aspects.
+
+	Explore the rest at your convenience! 
 			
