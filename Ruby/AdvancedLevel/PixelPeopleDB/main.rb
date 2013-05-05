@@ -7,10 +7,12 @@
 
 require './fileio.rb'
 require './DB.rb'
+require './GUI.rb'
 
 
 
 def main()
+	GUI.new
 	sysout("Booting System")
 
 	sysout("Loading Database...")
