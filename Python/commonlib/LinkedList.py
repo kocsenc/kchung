@@ -21,7 +21,7 @@ class Node:
     def get_all(self):
         entire_list = ""
         curr = self
-        while curr.next != None:
+        while curr != None:
             entire_list += str(curr.val) + " "
             curr = curr.next
         return entire_list

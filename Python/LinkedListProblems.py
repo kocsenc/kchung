@@ -13,10 +13,26 @@ def insert_ordered(node, val):
     """
     to_insert = Node(val)
 
-    curr = node
-    while curr.next.val < val:
-        curr = curr.next
+    if node.val >= val:
+        to_insert.next = node
+    else:
+        curr = node
+        while curr.next.val < val:
+            curr = curr.next
 
-    to_insert.next = curr.next
-    curr.next = to_insert
+        to_insert.next = curr.next
+        curr.next = to_insert
 
+
+def insert_at(head, node, index):
+    if index == 0:
+        node.next = head
+    else:
+        try:
+            curr = head
+            for i in range(1, index):
+                curr = curr.next
+            node.next = curr.next
+            curr.next = node
+        except:
+            pass
