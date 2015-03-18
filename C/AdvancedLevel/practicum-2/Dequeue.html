@@ -1,0 +1,843 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 14">
+<meta name="Originator" content="Microsoft Word 14">
+<link rel="File-List" href="Dequeue_files/filelist.xml"><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mike Lutz</o:Author>
+  <o:LastAuthor>Tom Reichlmayr</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>214</o:TotalTime>
+  <o:LastPrinted>2011-01-20T13:54:00Z</o:LastPrinted>
+  <o:Created>2013-01-10T20:45:00Z</o:Created>
+  <o:LastSaved>2013-01-10T20:46:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>948</o:Words>
+  <o:Characters>5410</o:Characters>
+  <o:Company>RIT Software Engineering</o:Company>
+  <o:Lines>45</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6346</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>800x600</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+<link rel="themeData" href="Dequeue_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="Dequeue_files/colorschememapping.xml"><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="99" Name="Hyperlink"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-font-kerning:16.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("Dequeue_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("Dequeue_files/header.htm") fcs;
+	mso-endnote-separator:url("Dequeue_files/header.htm") es;
+	mso-endnote-continuation-separator:url("Dequeue_files/header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-footer:url("Dequeue_files/header.htm") f1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:726731031;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1294967554 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1018197974;
+	mso-list-type:hybrid;
+	mso-list-template-ids:999172012 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:1294142533;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-736604702 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1679188946;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1829794088 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+@list l4
+	{mso-list-id:1834682803;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1932497446 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.25in;
+	text-indent:-9.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:2.75in;
+	text-indent:-9.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.25in;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></head>
+<body style="" lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<h1 style="margin-top: 0in; text-align: center;" align="center"><span style="text-transform: uppercase;">SE 350 – Personal Software Engineering<o:p></o:p></span></h1>
+
+<h1 style="margin: 0in 0in 8pt; text-align: center;" align="center"><span style="text-transform: uppercase;">Practicum
+#2 – Double Ended Queue<o:p></o:p></span></h1>
+
+<h3 style="margin: 6pt 0in;"><span style="font-size: 12pt;">Introduction<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 4pt;"><span style="font-size: 11pt;">A <i style="">queue</i> is
+a standard data structure supporting first-in, first-out access to stored data.
+In a queue, items are added at the back end and removed from the front.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 4pt;"><span style="font-size: 11pt;">A double ended queue (or <i style="">dequeue</i>) is a data structure where items can be added to or removed
+from <i style="">either</i> end. For this practicum
+you will incrementally implement <span class="GramE">a dequeue</span> data
+structure as a singly linked list of nodes, where each node contains a string
+item.<o:p></o:p></span></p>
+
+<h3 style="margin: 6pt 0in;"><span style="font-size: 12pt;">The Problem<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span style="font-size: 11pt;">The basic operations to manipulate <span class="GramE">a dequeue</span>
+of strings are the following. The parameter deqhead is passed &nbsp;in
+as either a&nbsp;pointer&nbsp;to&nbsp;the first element (node) &nbsp;of
+the queue, or as &nbsp;the address of where the pointer to the first
+element &nbsp;is being stored.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 3pt; margin-left: 40px;"><span class="GramE"><b style=""><span style="font-size: 11pt;">void</span></b></span><span style="font-size: 11pt;"> <span class="SpellE">deq_put_head</span>(<b style="">node </b>**deqhead<b style="">, char</b> *value)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">Puts
+a node containing a <i style=""><u>copy</u></i> of
+the string value at the head (front) of <span class="GramE">the dequeue</span>. Entires are not checked for uniqueness.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 3pt; margin-left: 40px;"><span class="GramE"><b style=""><span style="font-size: 11pt;">void</span></b></span><span style="font-size: 11pt;"> <span class="SpellE">deq_put_tail</span>(</span><span style="font-size: 11pt;"><b style="">node </b>**deqhead, </span><span style="font-size: 11pt;"><b style="">char</b> *value)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">Puts
+a node containing a <i style=""><u>copy</u></i> of
+the string value at the tail (back end) of <span class="GramE">the dequeue</span>. </span><span style="font-size: 11pt;">Entires are not checked for uniqueness.</span></p>
+
+<p class="MsoNormal" style="margin-bottom: 3pt; margin-left: 40px;"><span class="GramE"><b style=""><span style="font-size: 11pt;">void</span></b></span><span style="font-size: 11pt;"> <span class="SpellE">deq_get_head</span>(</span><span style="font-size: 11pt;"><b style="">node </b>**deqhead, </span><span style="font-size: 11pt;"><b style="">char</b> *value)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">If
+the dequeue is empty, simply returns.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">Otherwise,
+<i style=""><u>removes</u></i> the node at the head
+of <span class="GramE">the dequeue</span> (adjusting the dequeue pointers as
+necessary), <i style=""><u>copies</u></i> the stored
+string to value, and <i style=""><u>frees</u></i> all
+the storage associated with the node.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 3pt; margin-left: 40px;"><span class="GramE"><b style=""><span style="font-size: 11pt;">void</span></b></span><span style="font-size: 11pt;"> <span class="SpellE">deq_get_tail</span>(</span><span style="font-size: 11pt;"><b style="">node </b>**deqhead, </span><span style="font-size: 11pt;"><b style="">char</b> *value)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">If
+the dequeue is empty, simply returns.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">Otherwise,
+<i style=""><u>removes</u></i> the node at the tail
+of <span class="GramE">the dequeue</span> (adjusting the dequeue pointers as
+necessary), <i style=""><u>copies</u></i> the stored
+string to value, and <i style=""><u>frees</u></i> all
+the storage associated with the node.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 3pt; margin-left: 40px;"><span class="SpellE"><span class="GramE"><b style=""><span style="font-size: 11pt;">int</span></b></span></span><span style="font-size: 11pt;"> <span class="SpellE">deq_size</span>(</span><span style="font-size: 11pt;"><b style="">node&nbsp;</b>*deqhead</span><span style="font-size: 11pt;">)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.9134in;"><span style="font-size: 11pt;">Returns
+the number of items in <span class="GramE">the dequeue</span>. In our
+implementation this is done by traversing the dequeue list from head to tail,
+counting the number of nodes as we go.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 3pt; margin-left: 40px;"><span class="SpellE"><span class="GramE"><b style=""><span style="font-size: 11pt;">bool</span></b></span></span><span style="font-size: 11pt;"> <span class="SpellE">deq_is_empty</span>(</span><span style="font-size: 11pt;"><b style="">node&nbsp;</b>*deqhead</span><span style="font-size: 11pt;">)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 6pt 0.9134in;"><span style="font-size: 11pt;">Returns
+<b style="">true</b> if the dequeue has no elements
+(size is zero), <b style="">false</b> otherwise.<o:p></o:p></span></p>
+
+<h3 style="margin: 6pt 0in;"><span style="font-size: 12pt;">The Task<o:p></o:p></span></h3>
+
+<span style="font-size: 11pt;">&nbsp;Download the file <a href="dequeue.zip"><b style=""><i style="">dequeue.zip</i></b></a><o:p></o:p></span><br><span style="font-size: 11pt;"></span><br><span style="font-size: 11pt;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;</span></span></span><span style="font-size: 11pt;">You should see the following files:<br><br></span>
+
+
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">bool.h</span></b></span><b style=""><span style="font-size: 11pt;"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.5in;"><span class="GramE"><span style="font-size: 11pt;">Defines a <span class="SpellE"><b style="">bool</b></span>
+<span class="SpellE">datatype</span> with constants <b style="">false</b> and <b style="">true</b>.</span></span><span style="font-size: 11pt;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">dequeue.h</span></b></span><b style=""><span style="font-size: 11pt;"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.5in;"><span style="font-size: 11pt;">The
+interface header file defining the node structure, and declaring the six interface functions above.</span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in; page-break-after: avoid;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">dequeue.c</span></b></span><b style=""><span style="font-size: 11pt;"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.5in;"><span style="font-size: 11pt;">The
+skeleton implementation file you will fill in incrementally with
+implementations of the six functions.&nbsp;</span><span style="font-size: 11pt;"><o:p></o:p></span></p>
+
+<b style=""><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">
+</span></b>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in; page-break-after: avoid;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">dequeuetest.c</span></b></span><b style=""><span style="font-size: 11pt;"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.5in; page-break-after: avoid;"><span style="font-size: 11pt;">The
+simplectest test suite for testing functions in dequeue.c. The starting
+unit tests provided represent a subset of the tests that will be run
+against&nbsp;your submission. You are encouraged to modify/add tests as
+you see fit.&nbsp;</span></p>
+
+
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in;"><b style=""><span style="font-size: 11pt;">tests.h<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.5in;"><span class="GramE"><span style="font-size: 11pt;">The standard simplectest &nbsp;include file</span></span></p><span class="GramE"><span style="font-size: 11pt;"></span></span>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">Makefile<br></span></b></span></p><span class="SpellE"><span style="font-size: 11pt;"></span></span><div style="margin-left: 40px;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">&nbsp;</span></b><span style="font-size: 11pt;">A
+simple make file for building dequeue.c and dequeuetest.c You are free
+to modify the make file as you see fit. Your submission will be built
+and tested using the initial version found in the zip file.</span></span><span class="SpellE"><span style="font-size: 11pt;"></span></span></div><p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in; text-indent: -0.25in;"><span style="font-size: 11pt;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 11pt;"></span></p><p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in; text-indent: -0.25in;"><span style="font-size: 11pt;">You may implement the functions in any order, but we <i style="">strongly</i> suggest you use the following
+sequence:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in;"><b style=""><span style="font-size: 11pt;">deq_is_empty</span></b><span style="font-size: 11pt;">,<span class="GramE"><b style="">&nbsp;&nbsp;deq</b></span><b style="">_size</b>,<b style="">&nbsp;&nbsp;deq_put_head</b>,<b style="">&nbsp;&nbsp;deq_get_head</b>,<b style="">&nbsp;&nbsp;<span class="SpellE">deq_put_tail</span></b>,<b style="">&nbsp;&nbsp;<span class="SpellE">deq_get_tail</span></b></span><b style=""><o:p></o:p></b></p>
+
+<p class="MsoNormal" style="margin: 0in 0in 4pt 0.25in; text-indent: -0.25in;"><span style="font-size: 11pt;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 11pt;"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span style="font-size: 11pt;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size: 8pt;"><o:p>&nbsp;</o:p></span></p>
+
+<h3 style="margin-bottom: 6pt;"><span style="font-size: 12pt;">Submission<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-bottom: 4pt;"><span style="font-size: 11pt;">Create a directory in your repository called "practicum-2" containing the files, including&nbsp; <span class="SpellE"><b style="">dequeue.c</b></span>. We will only be grading the file <span style="font-weight: bold;">dequeue.c</span>. Submit &nbsp;(push) it as many times as you like to your pushbox</span><b style=""><span style="font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></b><span style="font-size: 11pt;">. Indeed, <b style=""><i style=""><u>we
+suggest you submit this file after you complete, debug and test each of the
+functions</u></i></b>.<o:p></o:p></span></p><br><h3 style="margin-bottom: 6pt;"><span style="font-size: 12pt;">Grading (40 point scale)<o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><b style=""><span style="font-size: 11pt;">Correct submission</span></b><span style="font-size: 11pt;"><span style="">&nbsp; </span>2<b style=""><o:p></o:p></b></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">deq_is_empty</span></b></span><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">deq_size</span></b></span><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">deq_put_head</span></b></span><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">deq_get_head</span></b></span><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">deq_put_tail</span></b></span><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><span class="SpellE"><b style=""><span style="font-size: 11pt;">deq_get_tail</span></b></span><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left: 36.7pt; text-indent: -27.35pt;"><b style=""><span style="font-size: 11pt;">Quality<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span style="font-size: 11pt;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top: 6pt; page-break-after: avoid;"><span style="font-size: 11pt;">Quality will be judged on
+the following criteria:<o:p></o:p></span></p>
+
+<ul style="margin-top: 0in;" type="disc">
+ <li class="MsoNormal" style="page-break-after: avoid;"><span style="font-size: 11pt;">Consistent and proper indentation of code.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="page-break-after: avoid;"><span style="font-size: 11pt;">Use of horizontal spacing (space characters) to improve
+     readability.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="page-break-after: avoid;"><span style="font-size: 11pt;">Use of vertical spacing (blank lines) to set off significant
+     focused portions of the code in each function.<o:p></o:p></span></li>
+ <li class="MsoNormal" style="page-break-after: avoid;"><span style="font-size: 11pt;">Clear, accurate, and informative naming of variables used in
+     functions.<o:p></o:p></span></li>
+</ul>
+
+</div>
+
+</body></html>
